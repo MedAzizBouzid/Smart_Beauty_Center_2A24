@@ -13,9 +13,8 @@
   <property name="windowTitle">
    <string>ZESTY</string>
   </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>icon.png</normaloff>icon.png</iconset>
+  <property name="autoFillBackground">
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -28,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <property name="maximumSize">
@@ -296,9 +295,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-20</y>
-        <width>1571</width>
-        <height>701</height>
+        <y>0</y>
+        <width>1091</width>
+        <height>911</height>
        </rect>
       </property>
       <property name="lineWidth">
@@ -308,56 +307,212 @@
        <string>TextLabel</string>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea">
+     <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>20</y>
-        <width>411</width>
-        <height>541</height>
+        <x>29</x>
+        <y>60</y>
+        <width>391</width>
+        <height>481</height>
        </rect>
       </property>
-      <property name="frameShadow">
-       <enum>QFrame::Sunken</enum>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+       </font>
       </property>
-      <property name="lineWidth">
-       <number>3</number>
+      <property name="title">
+       <string>Produit</string>
       </property>
-      <property name="widgetResizable">
+      <property name="flat">
        <bool>true</bool>
       </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
+      <widget class="QLabel" name="label_5">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>409</width>
-         <height>539</height>
+         <x>30</x>
+         <y>100</y>
+         <width>91</width>
+         <height>16</height>
         </rect>
        </property>
-       <widget class="QLabel" name="label_5">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>60</y>
-          <width>111</width>
-          <height>16</height>
-         </rect>
-        </property>
+       <property name="text">
+        <string>Nouveau Nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>170</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Code à bar</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>300</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Quantité</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>370</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Prix</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>430</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Modifier</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>430</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Retour</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>100</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>170</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>300</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>370</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>250</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>250</y>
+         <width>261</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
         <property name="text">
-         <string>Nom du produit</string>
+         <string>Produits d'hygiène et de toilette </string>
         </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit_5">
-        <property name="geometry">
-         <rect>
-          <x>210</x>
-          <y>60</y>
-          <width>113</width>
-          <height>22</height>
-         </rect>
+       </item>
+       <item>
+        <property name="text">
+         <string>Produits solaires</string>
         </property>
-       </widget>
+       </item>
+       <item>
+        <property name="text">
+         <string>Produits de soins esthétiques</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Produits pour la beauté des mains et des pieds</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Produits pour l'épilation</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Produits de maquillage </string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Parfums</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Produits d'entretien capillaires</string>
+        </property>
+       </item>
       </widget>
      </widget>
     </widget>
@@ -369,9 +524,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
+        <y>0</y>
         <width>1571</width>
-        <height>701</height>
+        <height>911</height>
        </rect>
       </property>
       <property name="text">
