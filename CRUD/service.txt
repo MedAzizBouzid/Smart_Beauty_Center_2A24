@@ -1,0 +1,5 @@
+admin(Id,Nom,prenom)
+service(code,descreption,type,prix)
+ajouter(code,description,type,prix,#id)
+suprimer(code,#id) 
+modifier(code,description,type,prix,#id)
