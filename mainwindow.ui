@@ -98,7 +98,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="B_Ajout">
        <property name="geometry">
         <rect>
          <x>350</x>
@@ -133,22 +133,17 @@
        </property>
        <item>
         <property name="text">
-         <string>Manager</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Trésorier</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
          <string>Ouvrier</string>
         </property>
        </item>
        <item>
         <property name="text">
          <string>Propriétaire</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trésorier</string>
         </property>
        </item>
       </widget>

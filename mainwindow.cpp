@@ -18,3 +18,8 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_B_Ajout_clicked()
+{
+
+}
