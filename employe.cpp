@@ -23,17 +23,8 @@ void Employe::setNom(QString Nom){this->Nom=Nom;}
 void Employe::setPrenom(QString Prenom){this->Prenom=Prenom;}
 void Employe::setAdresse(QString Adresse){this->Adresse=Adresse;}
 void Employe::setRole(QString Role){this->Role=Role;}
-bool Employe::delete(int CIN)
-{
-    bool test=false;
-    QSqlQuery query;
-    QString res=QString::number(CIN);
-        query.prepare("delete from employe where CIN= :cin");
-        query.bindValue(":cin",res);
-    return query.exec();
-}
 bool Employe::ajouter()
-{bool test=false;
+{bool test=true;
     QSqlQuery query;
     QString id_string=QString::number(CIN);
     QString Telephone_string=QString::number(Telephone);
@@ -47,3 +38,28 @@ bool Employe::ajouter()
           query.bindValue(":role", Role);
           query.exec();
     return test;}
+bool Employe::supprimer(int CIN)
+{
+    QSqlQuery query;
+    QString res=QString::number(CIN);
+    query.prepare("delete from employe where CIN= :cin");
+    query.bindValue(":cin",res);
+
+ return query.exec();
+
+}
+QSqlQueryModel * Employe::afficher()
+{
+    QSqlQueryModel * model=new QSqlQueryModel();
+    model->setQuery("select * from Employe");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Role"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_Tel"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Prenom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Adresse"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
+    return model;
+
+
+
+}

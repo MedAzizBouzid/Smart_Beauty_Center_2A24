@@ -3,6 +3,7 @@
 #include <QString>
 #include <QSqlQuery>
 #include <QSqlQueryModel>
+#include <QApplication>
 class Employe
 {
 public:
@@ -23,6 +24,7 @@ public:
     void setAdresse(QString);
     void setRole(QString);
     bool ajouter();
+    bool supprimer(int);
     QSqlQueryModel * afficher();
 
 

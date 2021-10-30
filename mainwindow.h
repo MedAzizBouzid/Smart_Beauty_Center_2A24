@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "employe.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -18,8 +18,13 @@ public:
 private slots:
     void on_B_Ajout_clicked();
 
+    void on_B_delete_clicked();
+
+    void on_tableView_activated(const QModelIndex &index);
+
 private:
     Ui::MainWindow *ui;
+    Employe Etmp;
 };
 
 #endif // MAINWINDOW_H
