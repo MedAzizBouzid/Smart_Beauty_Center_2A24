@@ -1,12 +1,13 @@
 #ifndef EMPLOYE_H
 #define EMPLOYE_H
 #include <QString>
-
+#include <QSqlQuery>
+#include <QSqlQueryModel>
 class Employe
 {
 public:
     Employe();
-    Employe(int, int Telephone, int, QString, QString, QString, QString);
+    Employe(int, int, int, QString, QString, QString, QString);
     int getCIN();
     int getTelephone();
     int getH_Travail();
@@ -21,7 +22,8 @@ public:
     void setPrenom(QString);
     void setAdresse(QString);
     void setRole(QString);
-
+    bool ajouter();
+    QSqlQueryModel * afficher();
 
 
 private:

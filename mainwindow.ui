@@ -88,7 +88,7 @@
         <string>Nom</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="le_nom">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -119,34 +119,6 @@
         <string>Confirmer</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox">
-       <property name="geometry">
-        <rect>
-         <x>90</x>
-         <y>250</y>
-         <width>121</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
-       <item>
-        <property name="text">
-         <string>Ouvrier</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Propriétaire</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Trésorier</string>
-        </property>
-       </item>
-      </widget>
       <widget class="QLabel" name="label_3">
        <property name="geometry">
         <rect>
@@ -160,7 +132,7 @@
         <string>prénom</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="le_prenom">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -170,7 +142,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_3">
+      <widget class="QLineEdit" name="le_id">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -193,7 +165,7 @@
         <string>CIN</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_4">
+      <widget class="QLineEdit" name="le_adresse">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -216,7 +188,7 @@
         <string>Adresse</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_5">
+      <widget class="QLineEdit" name="le_telephone">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -250,6 +222,16 @@
        </property>
        <property name="text">
         <string>Role</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_role">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>250</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
        </property>
       </widget>
      </widget>
