@@ -28,7 +28,7 @@ void MainWindow::on_pb_ajouter_clicked()
 {
     QString NomProduit=ui->le_nom->text();
     float Prix=ui->le_prix->text().toFloat();
-int CodeABar=ui->le_cab->text().toLong();
+int CodeABar=ui->le_cab->text().toInt();
 QString Type=ui->le_type->text();
         int Quantite=ui->le_quantite->text().toInt();
 
@@ -37,6 +37,7 @@ QString Type=ui->le_type->text();
     bool test=P.ajouter();
     if(test)
     {QMessageBox::information(nullptr,QObject::tr("OK"),QObject::tr("Ajout effectué avec succées \n Click cancel to exit. "),QMessageBox::Cancel);
+        ui->tab_afficher->setModel(P.afficher());
 
 }else QMessageBox::critical(nullptr,QObject::tr("Not OK"),QObject::tr("Ajout non effectué.\n Click cancel to exit."),QMessageBox::Cancel);
 
