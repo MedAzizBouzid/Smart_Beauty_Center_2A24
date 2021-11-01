@@ -25,13 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    ensegniant.cpp \
+    client.cpp \
         main.cpp \
         mainwindow.cpp \
     connection.cpp
 
 HEADERS += \
-    ensegniant.h \
+    client.h \
         mainwindow.h \
     connection.h
 
