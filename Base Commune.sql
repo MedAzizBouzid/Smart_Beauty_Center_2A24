@@ -28,7 +28,9 @@ CREATE TABLE Fournir(
 Produit NUMBER,
 Fournisseur NUMBER,
 CONSTRAINT Fournir_Produit_fk Foreign KEY(Produit) REFERENCES Produits(Code_abar),
-CONSTRAINT Fournir_Fournisseur_fk Foreign KEY(Fournisseur) REFERENCES Fournisseurs(Code_F)
+CONSTRAINT Fournir_Fournisseur_fk Foreign KEY(Fournisseur) REFERENCES Fournisseurs(Code_F),
+CONSTRAINT Fournir_Produit_Fournissuer_pk Primary key(Produit,Fournisseur)
+
 );
 CREATE TABLE Employe(
 CIN NUMBER,
@@ -43,7 +45,8 @@ CREATE TABLE Manipuler(
 Prod NUMBER,
 Emp NUMBER,
 CONSTRAINT Manipuler_Produit_fk Foreign KEY(Prod) REFERENCES Produits(Code_abar),
-CONSTRAINT Manipuler_Employe_fk Foreign KEY(Emp) REFERENCES Employe(CIN)
+CONSTRAINT Manipuler_Employe_fk Foreign KEY(Emp) REFERENCES Employe(CIN),
+CONSTRAINT Manipuler_Prod_Fmp_pk Primary key(Prod,Emp)
 );
 CREATE TABLE Client(
 Code_C NUMBER,
@@ -58,8 +61,9 @@ CONSTRAINT Client_pk PRIMARY KEY(Code_C)
 CREATE TABLE Servir(
 Cli NUMBER,
 Emp NUMBER,
-CONSTRAINT Servir_Client_fk Foreign KEY(Cli) REFERENCES Clients(Code_C),
-CONSTRAINT Servir_Employe_fk Foreign KEY(Emp) REFERENCES Employe(CIN)
+CONSTRAINT Servir_Client_fk Foreign KEY(Cli) REFERENCES Client(Code_C),
+CONSTRAINT Servir_Employe_fk Foreign KEY(Emp) REFERENCES Employe(CIN),
+CONSTRAINT Servir_Cli_Emp_pk Primary KEY(Cli,Emp)
 );
 CREATE TABLE Comptabilite(
 Code_Fact NUMBER,
@@ -82,5 +86,6 @@ CREATE TABLE Choisir(
 Serv NUMBER,
 Cli NUMBER,
 CONSTRAINT Choisir_Client_fk Foreign KEY(Cli) REFERENCES Client(Code_C),
-CONSTRAINT Choisir_Service_fk Foreign KEY(Serv) REFERENCES Service(Code_S)
+CONSTRAINT Choisir_Service_fk Foreign KEY(Serv) REFERENCES Service(Code_S),
+CONSTRAINT Choisir_Service_Client_pk Primary key(Serv,Cli)
 );
