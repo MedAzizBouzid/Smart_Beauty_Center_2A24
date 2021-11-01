@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>787</width>
-    <height>515</height>
+    <width>1208</width>
+    <height>922</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,7 +36,7 @@
          <enum>QTabWidget::Triangular</enum>
         </property>
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <property name="elideMode">
          <enum>Qt::ElideNone</enum>
@@ -139,7 +139,7 @@
             </font>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;code de service&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;code de service&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLineEdit" name="lineEdit_5">
@@ -171,7 +171,7 @@
             </font>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;description: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;description: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLineEdit" name="lineEdit_6">
@@ -200,7 +200,7 @@
             </font>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;type: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;type: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLineEdit" name="lineEdit_7">
@@ -229,7 +229,7 @@
             </font>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;prix: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;prix: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLineEdit" name="lineEdit_8">
@@ -248,8 +248,8 @@
            <rect>
             <x>-1150</x>
             <y>20</y>
-            <width>1941</width>
-            <height>431</height>
+            <width>2321</width>
+            <height>831</height>
            </rect>
           </property>
           <property name="font">
@@ -262,7 +262,7 @@
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap>../../../../b1.jpg</pixmap>
+           <pixmap>../../../../../../Downloads/Untitled Diagram.png</pixmap>
           </property>
          </widget>
          <zorder>label</zorder>
@@ -284,10 +284,10 @@
          <widget class="QLabel" name="label_2">
           <property name="geometry">
            <rect>
-            <x>370</x>
-            <y>10</y>
-            <width>381</width>
-            <height>331</height>
+            <x>-910</x>
+            <y>0</y>
+            <width>2121</width>
+            <height>641</height>
            </rect>
           </property>
           <property name="text">
@@ -456,17 +456,17 @@
          <widget class="QLabel" name="label_3">
           <property name="geometry">
            <rect>
-            <x>386</x>
-            <y>6</y>
-            <width>371</width>
-            <height>371</height>
+            <x>-690</x>
+            <y>0</y>
+            <width>2271</width>
+            <height>671</height>
            </rect>
           </property>
           <property name="text">
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap>../../../../../../Downloads/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+           <pixmap>../../../../b1.jpg</pixmap>
           </property>
          </widget>
          <widget class="QPushButton" name="pushButton_5">
@@ -579,17 +579,17 @@
           </property>
           <property name="geometry">
            <rect>
-            <x>390</x>
-            <y>0</y>
-            <width>371</width>
-            <height>371</height>
+            <x>-690</x>
+            <y>-40</y>
+            <width>1921</width>
+            <height>701</height>
            </rect>
           </property>
           <property name="text">
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap>../../../../../../Downloads/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+           <pixmap>../../../../b1.jpg</pixmap>
           </property>
          </widget>
          <widget class="QPushButton" name="pushButton_7">
