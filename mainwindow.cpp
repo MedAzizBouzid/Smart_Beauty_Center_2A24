@@ -9,6 +9,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->le_id->setValidator(new QIntValidator(0,99999999,this));
+    ui->le_telephone->setValidator(new QIntValidator(0,99999999,this));
+    ui->le_id->setValidator(new QIntValidator(0,99999999,this));
+    ui->CIN_supp->setValidator(new QIntValidator(0,99999999,this));
     ui->tableView->setModel(Etmp.afficher());
 
     QPixmap pix("C:/Users/LENOVO/Desktop/Gestion Employee/background.png");
