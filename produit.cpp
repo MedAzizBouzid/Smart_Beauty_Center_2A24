@@ -131,13 +131,10 @@ QSqlQueryModel*  Produit::rechercher_cab(int cab)
 
 
      qry.prepare("select * from produit where Code_ABar=:cab");
-     qry.bindValue(":cab",res_cab);
+     qry.bindValue(":code_abar",res_cab);
      qry.exec();
      QSqlQueryModel *model= new QSqlQueryModel;
 model->setQuery(qry);
-
-
-
 
     return model;
 
