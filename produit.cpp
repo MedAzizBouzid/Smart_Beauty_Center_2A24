@@ -2,6 +2,8 @@
 #include<QSqlQuery>
 #include<QDebug>
 #include<QObject>
+#include<QSqlError>
+#include<QMessageBox>
 Produit::Produit()
 {
 NomProduit=" ";
@@ -59,7 +61,7 @@ void Produit:: setType(QString type)
 {
     Type=type;
 }
-void Produit :: setCodeABar(int cab)
+void Produit :: setCodeABar(int  cab)
 {
  CodeABar=cab;
 }
@@ -67,24 +69,53 @@ void Produit :: setCodeABar(int cab)
 bool Produit::ajouter()
 {
 
-
+bool test=true;
     QSqlQuery query;
     QString Quantite_string=QString::number(Quantite);
     QString Prix_string=QString::number(Prix);
+    QString CAB_string=QString::number(CodeABar);
+
 
 
          query.prepare("INSERT INTO PRODUITS (CODE_ABAR,NOM, TYPE_P ,QUANTITE,PRIX) "
-                       "VALUES (:code a bar,:nom,:type,:quantite,:prix)");
-         query.bindValue("code a bar", 15648);
-         query.bindValue("nom", "aziz");
-         query.bindValue("type" ,"parfum" );
-         query.bindValue("quantite", "15");
-         query.bindValue("prix", "3.2");
-         return query.exec();
+                       "VALUES (:code_abar,:nom,:type_p,:quantite,:prix)");
+         query.bindValue(":code_abar",CAB_string );
+         query.bindValue(":nom", NomProduit);
+         query.bindValue(":type_p" ,Type );
+         query.bindValue(":quantite", Quantite_string);
+         query.bindValue(":prix", Prix_string);
+         query.exec();
+         return test;
 
 
 
 
+}
+
+bool Produit::supprimer(int  cab)
+{ QSqlQuery query;
+QString resCAB=QString::number(cab);
+    query.prepare(" Delete from produits where Code_ABar=:cab");
+    query.bindValue(":cab", resCAB);
+
+    return query.exec();
+}
+
+bool Produit::modifier(int cab)
+{
+
+QSqlQuery query;
+QString res_cab= QString::number(cab);
+ bool test =query.exec() ;
+query.prepare("Update produit set  CODE_ABAR=:code_abar,NOM=:nom, TYPE_P=:type ,QUANTITE=:quantite,PRIX=:prix  where CODE_ABAR =:code_abar ");
+query.bindValue(":code_abar",res_cab);
+query.bindValue(":nom",NomProduit);
+query.bindValue(":type_p",Type);
+query.bindValue(":quantite",Quantite);
+query.bindValue(":prix",Prix);
+
+
+   return test;
 }
 QSqlQueryModel* Produit::afficher()
 {
@@ -93,26 +124,31 @@ QSqlQueryModel* Produit::afficher()
 
 return model;
 }
-bool Produit::supprimer(int cab)
-{ QSqlQuery query;
+QSqlQueryModel*  Produit::rechercher_cab(int cab)
+ { QString res_cab=QString::number(cab);
 
-    query.prepare(" Delete from produits where Code_ABar=:cab");
-    query.bindValue(0, cab);
+    QSqlQuery qry;
 
-    return query.exec();
-}
-QSqlQueryModel *  Produit::rechercher_cab(int cab)
- {
-     QSqlQuery qry;
-     qry.prepare("select * from produit where cab=:cab");
-     qry.bindValue(":cab",cab);
+
+     qry.prepare("select * from produit where Code_ABar=:cab");
+     qry.bindValue(":cab",res_cab);
      qry.exec();
-
      QSqlQueryModel *model= new QSqlQueryModel;
-     model->setQuery(qry);
+model->setQuery(qry);
+
+
 
 
     return model;
 
 
  }
+int Produit::Notifier()
+{int pos=3;
+
+    if((Quantite<5)&&(Quantite>0))
+    pos= 1;
+else if(Quantite==0)
+pos= 0;
+    return pos;
+}

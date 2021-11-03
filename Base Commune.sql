@@ -87,5 +87,5 @@ Serv NUMBER,
 Cli NUMBER,
 CONSTRAINT Choisir_Client_fk Foreign KEY(Cli) REFERENCES Client(Code_C),
 CONSTRAINT Choisir_Service_fk Foreign KEY(Serv) REFERENCES Service(Code_S),
-CONSTRAINT Choisir_Service_Client_pk Primary key(Serv,Cli)
+CONSTRAINT Choisir_Service_Client_pk Primary KEY(Serv,Cli)
 );
