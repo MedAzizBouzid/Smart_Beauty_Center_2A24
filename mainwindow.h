@@ -22,6 +22,12 @@ private slots:
 
     void on_tableView_activated(const QModelIndex &index);
 
+    void on_B_Modifier_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_Tri_nom_clicked();
+
 private:
     Ui::MainWindow *ui;
     Employe Etmp;

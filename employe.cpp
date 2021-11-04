@@ -24,7 +24,7 @@ void Employe::setPrenom(QString Prenom){this->Prenom=Prenom;}
 void Employe::setAdresse(QString Adresse){this->Adresse=Adresse;}
 void Employe::setRole(QString Role){this->Role=Role;}
 bool Employe::ajouter()
-{bool test=true;
+{
     QSqlQuery query;
     QString id_string=QString::number(CIN);
     QString Telephone_string=QString::number(Telephone);
@@ -36,8 +36,22 @@ bool Employe::ajouter()
           query.bindValue(":prenom", Prenom);
           query.bindValue(":adresse", Adresse);
           query.bindValue(":role", Role);
-          query.exec();
-    return test;}
+           return query.exec();
+    }
+bool Employe::modifier(int CIN)
+{
+QSqlQuery query;
+QString id_string=QString::number(CIN);
+QString Telephone_string=QString::number(Telephone);
+query.prepare("update employe set CIN = :cin , NUM_TEL = :num_tel , NOM = :nom , PRENOM = :prenom , ADRESSE = :adresse , ROLE = :role where CIN = :cin ");
+query.bindValue(":cin", id_string);
+query.bindValue(":num_tel", Telephone_string);
+query.bindValue(":nom", Nom);
+query.bindValue(":prenom", Prenom);
+query.bindValue(":adresse", Adresse);
+query.bindValue(":role", Role);
+return    query.exec();
+}
 bool Employe::supprimer(int CIN)
 {
     QSqlQuery query;
@@ -59,7 +73,30 @@ QSqlQueryModel * Employe::afficher()
     model->setHeaderData(0,Qt::Horizontal,QObject::tr("Adresse"));
     model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
     return model;
+}
+QSqlQueryModel*  Employe::rechercher_nom(QString nnom)
+ {
+    QSqlQuery qry;
+     qry.prepare("SELECT * FROM Employe where Nom=:nom");
+     qry.bindValue(":nom",nnom);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+model->setQuery(qry);
 
+    return model;
+ }
+QSqlQueryModel * Employe::Tri_nom()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
 
+    model->setQuery("select * from Employe order by NOM" );
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Role"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_Tel"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Prenom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Adresse"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
+
+ return model;
 
 }

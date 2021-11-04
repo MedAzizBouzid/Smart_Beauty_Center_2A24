@@ -24,9 +24,11 @@ public:
     void setAdresse(QString);
     void setRole(QString);
     bool ajouter();
+    bool modifier(int);
     bool supprimer(int);
     QSqlQueryModel * afficher();
-
+    QSqlQueryModel* rechercher_nom(QString nnom);
+    QSqlQueryModel * Tri_nom();
 
 private:
     int CIN,Telephone,H_Travail;

@@ -2,6 +2,9 @@
 #include "ui_mainwindow.h"
 #include "employe.h"
 #include "connection.h"
+#define NOM_RX "^([a-z]+[ ]?|[a-z])+$"
+      QRegExp rxNom(NOM_RX);
+      QRegExpValidator* valiNom= new QRegExpValidator(rxNom);
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -14,6 +17,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->le_id->setValidator(new QIntValidator(0,99999999,this));
     ui->CIN_supp->setValidator(new QIntValidator(0,99999999,this));
     ui->tableView->setModel(Etmp.afficher());
+    ui->le_nom->setValidator(valiNom);
+    ui->le_role->setValidator(valiNom);
+    ui->le_prenom->setValidator(valiNom);
+    ui->Mod_Nom->setValidator(valiNom);
+    ui->Mod_Role->setValidator(valiNom);
+    ui->Mod_Prenom->setValidator(valiNom);
+
 
     QPixmap pix("C:/Users/LENOVO/Desktop/Gestion Employee/background.png");
         ui->background_1->setPixmap(pix);
@@ -70,5 +80,48 @@ void MainWindow::on_B_delete_clicked()
                QObject::tr("suppression non effectué\n"
                           "click cancel to exit."), QMessageBox::Cancel);
 
+
+}
+
+void MainWindow::on_B_Modifier_clicked()
+{
+    int id = ui->Mod_CIN->text().toInt();
+        QString nom= ui->Mod_Nom->text();
+        QString prenom= ui->Mod_Prenom->text();
+        QString role= ui->Mod_Role->text();
+        QString adresse= ui->Mod_Adresse->text();
+        int telephone= ui->Mod_Telephone->text().toInt();
+Employe E(id,telephone,0,nom,prenom,adresse,role);
+      bool test=E.modifier(id);
+      if(test)
+    {
+
+           ui->tableView->setModel(Etmp.afficher());
+    QMessageBox::information(nullptr, QObject::tr("modifier une agence"),
+                      QObject::tr("Agence modifié.\n"
+                                  "Click Cancel to exit."), QMessageBox::Cancel);
+
+    }
+      else
+          QMessageBox::critical(nullptr, QObject::tr("modifier une agence"),
+                      QObject::tr("Erreur !.\n"
+                                  "Click Cancel to exit."), QMessageBox::Cancel);
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    QString nnom=ui->Recherche->text();
+
+          QSqlQueryModel* model=Etmp.rechercher_nom(nnom);
+          if (model != nullptr)
+ {
+          ui->tableView_2->setModel(model);
+ }
+}
+
+void MainWindow::on_Tri_nom_clicked()
+{
+     QSqlQueryModel* model=Etmp.Tri_nom();
+     ui->tableView_2->setModel(model);
 
 }
