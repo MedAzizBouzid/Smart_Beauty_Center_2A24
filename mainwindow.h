@@ -25,9 +25,19 @@ private slots:
 
     void on_pb_rechercher_clicked();
 
+    void on_pb_trinom_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_pb_type_clicked();
+
+    void on_pb_quantite_clicked();
+
+    void on_pb_prix_clicked();
+
 private:
     Ui::MainWindow *ui;
-    Produit P;
+    Produit Pro;
 };
 
 #endif // MAINWINDOW_H

@@ -18,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->background_2->setPixmap(pix);
     ui->background_3->setPixmap(pix);
     ui->background_4->setPixmap(pix);
+     ui->background_5->setPixmap(pix);
+
 
 
 
@@ -36,7 +38,7 @@ ui->le_typemodifier->setValidator(valiNom);
     ui->le_cabsupp->setValidator(new QIntValidator(0, 9999999, this));
     ui->le_quantitemodifier->setValidator(new QIntValidator(0, 999999, this));
     ui->le_prixmodifier->setValidator(new QIntValidator(0, 9999999, this));
-    ui->tab_afficher->setModel(P.afficher());
+    ui->tab_afficher->setModel(Pro.afficher());
 
 }
 
@@ -68,7 +70,8 @@ QMessageBox::critical(nullptr,QObject::tr("Attention Stock"),QObject::tr("Stock 
     else if(pos==1)
         QMessageBox::critical(nullptr,QObject::tr("Attention Stock"),QObject::tr("stock sera épuisé prochainement .\n Click cancel to exit."),QMessageBox::Cancel);
 
-  }  else {QMessageBox::critical(nullptr,QObject::tr("Not OK"),QObject::tr("Ajout non effectué.\n Click cancel to exit."),QMessageBox::Cancel);
+  }  else {
+        QMessageBox::critical(nullptr,QObject::tr("Not OK"),QObject::tr("Ajout non effectué.\n Click cancel to exit."),QMessageBox::Cancel);
 ui->tab_afficher->setModel(P.afficher());}
 }
 
@@ -81,7 +84,7 @@ void MainWindow::on_pb_supprimer_clicked()
         test =false;
     if(test)
     {QMessageBox::information(nullptr,QObject::tr("OK"),QObject::tr("Suppression effectué avec succées \n Click cancel to exit. "),QMessageBox::Cancel);
-ui->tab_afficher->setModel(P.afficher());
+ui->tab_afficher->setModel(Pro.afficher());
 }
     else QMessageBox::critical(nullptr,QObject::tr("Not OK"),QObject::tr("Supppression non effectué.\n Click cancel to exit."),QMessageBox::Cancel);
 }
@@ -89,43 +92,83 @@ ui->tab_afficher->setModel(P.afficher());
 
 void MainWindow::on_pb_modifier_clicked()
 {
-    QString NomProduit=ui->le_nommodifier->text();
-    float Prix=ui->le_prixmodifier->text().toFloat();
-int CodeABar=ui->le_cabmodifier->text().toInt();
-QString Type=ui->le_typemodifier->text();
-        int Quantite=ui->le_quantitemodifier->text().toInt();
+QString NomProduitn=ui->le_nommodifier->text();
+float Prixn=ui->le_quantitemodifier->text().toInt();
+int cab=ui->le_cabmodifier->text().toInt();
+QString Typen=ui->le_typemodifier->text();
+int Quantiten=ui->le_prixmodifier->text().toFloat();
 
-Produit P(NomProduit,CodeABar,Type,Quantite,Prix);
+Produit P(NomProduitn,cab,Typen,Quantiten,Prixn);
 
-    bool test=P.modifier(CodeABar);
-    int pos=P.Notifier();
-    if(NomProduit=="" || Prix==0 || CodeABar==0 || Type=="" || Quantite==0 )
-            test=false;
-    if(test)
-    {QMessageBox::information(nullptr,QObject::tr("Modifier produit"),QObject::tr("Modification effectué avec succées \n Click cancel to exit. "),QMessageBox::Cancel);
-        ui->tab_afficher->setModel(P.afficher());
-        if(pos==0)
-QMessageBox::critical(nullptr,QObject::tr("Attention Stock"),QObject::tr("Stock est épuisé.\n Veuillez contacter le fournisseur \n Click cancel to exit."),QMessageBox::Cancel);
+bool test=P.modifier(cab);
 
-    else if(pos==1)
-        QMessageBox::critical(nullptr,QObject::tr("Attention Stock"),QObject::tr("stock sera épuisé prochainement .\n Click cancel to exit."),QMessageBox::Cancel);
+if(NomProduitn=="" || Prixn==0 || cab==0 || Typen=="" || Quantiten==0 )
+test=false;
+if(test)
+{ui->tab_afficher->setModel(Pro.afficher());
+    QMessageBox::information(nullptr,QObject::tr("Modifier produit"),QObject::tr("Modification effectué avec succées \n Click cancel to exit. "),QMessageBox::Cancel);
+int pos=P.Notifier();
+    if(pos==0)
+        QMessageBox::critical(nullptr,QObject::tr("Attention Stock"),QObject::tr("Stock est épuisé.\n Veuillez contacter le fournisseur \n Click cancel to exit."),QMessageBox::Cancel);
+
+            else if(pos==1)
+                    QMessageBox::critical(nullptr,QObject::tr("Attention Stock"),QObject::tr("stock sera épuisé prochainement .\n Click cancel to exit."),QMessageBox::Cancel);
 }
-    else {QMessageBox::critical(nullptr,QObject::tr("Modifier produit"),QObject::tr("Modification non effectué.\n Click cancel to exit."),QMessageBox::Cancel);
-ui->tab_afficher->setModel(P.afficher());}
+else {
+    ui->tab_afficher->setModel(Pro.afficher());
+    QMessageBox::critical(nullptr,QObject::tr("Modifier produit"),QObject::tr("Modification non effectué.\n Click cancel to exit."),QMessageBox::Cancel);
+}
 
 }
+
 
 void MainWindow::on_pb_rechercher_clicked()
 {
 
 int cab=ui->le_cabrechercher->text().toInt();
 
-      QSqlQueryModel* model=P.rechercher_cab( cab);
-      if (model!=nullptr)
+
+      QSqlQueryModel* model=Pro.rechercher_cab( cab);
+      if (model != nullptr)
                              {
-                                 ui->table_rechercher->setModel(model);
+                                 ui->tab_rechercher->setModel(model);
                              }
 
 
 }
 
+
+void MainWindow::on_pb_trinom_clicked()
+{
+    QSqlQueryModel* model=Pro.trienom( );
+    if(model !=nullptr)
+         ui->tab_trie->setModel(model);
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    QSqlQueryModel* model=Pro.trietype( );
+    if(model !=nullptr)
+         ui->tab_trie->setModel(model);
+}
+
+void MainWindow::on_pb_type_clicked()
+{
+    QSqlQueryModel* model=Pro.trietype( );
+    if(model !=nullptr)
+         ui->tab_trie->setModel(model);
+}
+
+void MainWindow::on_pb_quantite_clicked()
+{
+    QSqlQueryModel* model=Pro.triequantite( );
+    if(model !=nullptr)
+         ui->tab_trie->setModel(model);
+}
+
+void MainWindow::on_pb_prix_clicked()
+{
+    QSqlQueryModel* model=Pro.trieprix( );
+    if(model !=nullptr)
+         ui->tab_trie->setModel(model);
+}

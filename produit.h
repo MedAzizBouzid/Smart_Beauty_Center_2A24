@@ -26,6 +26,10 @@ public:
     QSqlQueryModel* rechercher_cab(int);
     void chat();
   int  Notifier();
+  QSqlQueryModel* trienom();
+  QSqlQueryModel* trietype();
+  QSqlQueryModel* triequantite();
+  QSqlQueryModel* trieprix();
 
 private:
 QString  NomProduit;

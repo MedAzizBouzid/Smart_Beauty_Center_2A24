@@ -106,17 +106,22 @@ bool Produit::modifier(int cab)
 
 QSqlQuery query;
 QString res_cab= QString::number(cab);
- bool test =query.exec() ;
-query.prepare("Update produit set  CODE_ABAR=:code_abar,NOM=:nom, TYPE_P=:type ,QUANTITE=:quantite,PRIX=:prix  where CODE_ABAR =:code_abar ");
+QString Code_ABar_string=QString::number(CodeABar);
+QString Quantite_string=QString::number(Quantite);
+QString Prix_string=QString::number(Prix);
+
+query.prepare("UPDATE PRODUITS SET  Code_abar=:code_abar,Nom =:nom, Type_P=:type_p ,Quantite=:quantite,Prix=:prix  where Code_abar=:code_abar");
+
+
 query.bindValue(":code_abar",res_cab);
 query.bindValue(":nom",NomProduit);
 query.bindValue(":type_p",Type);
-query.bindValue(":quantite",Quantite);
-query.bindValue(":prix",Prix);
+query.bindValue(":quantite",Quantite_string);
+query.bindValue(":prix",Prix_string);
 
-
-   return test;
+   return query.exec();
 }
+
 QSqlQueryModel* Produit::afficher()
 {
     QSqlQueryModel* model=new QSqlQueryModel();
@@ -130,13 +135,14 @@ QSqlQueryModel*  Produit::rechercher_cab(int cab)
     QSqlQuery qry;
 
 
-     qry.prepare("select * from produit where Code_ABar=:cab");
-     qry.bindValue(":code_abar",res_cab);
+     qry.prepare("SELECT* FROM produits where Code_abar=:cab");
+     qry.bindValue(":cab",res_cab);
      qry.exec();
      QSqlQueryModel *model= new QSqlQueryModel;
 model->setQuery(qry);
 
     return model;
+
 
 
  }
@@ -148,4 +154,52 @@ int Produit::Notifier()
 else if(Quantite==0)
 pos= 0;
     return pos;
+}
+QSqlQueryModel *Produit:: trienom()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select * from produits order by NOM" );
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CODE_ABAR"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("TYPE_P"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("QUANTITE"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("PRIX"));
+
+ return model;
+}
+QSqlQueryModel *Produit:: trietype()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select * from produits order by TYPE_P" );
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CODE_ABAR"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("TYPE_P"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("QUANTITE"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("PRIX"));
+
+ return model;
+}
+QSqlQueryModel *Produit:: triequantite()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select * from produits order by Quantite" );
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CODE_ABAR"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("TYPE_P"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("QUANTITE"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("PRIX"));
+
+ return model;
+}
+QSqlQueryModel *Produit:: trieprix()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select * from produits order by PRIX" );
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CODE_ABAR"));
+    model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
+    model->setHeaderData(2,Qt::Horizontal,QObject::tr("TYPE_P"));
+    model->setHeaderData(3,Qt::Horizontal,QObject::tr("QUANTITE"));
+    model->setHeaderData(4,Qt::Horizontal,QObject::tr("PRIX"));
+
+ return model;
 }

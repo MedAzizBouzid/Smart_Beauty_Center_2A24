@@ -17,7 +17,7 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTabWidget" name="tabWidget">
+   <widget class="QTabWidget" name="tab_tri">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -33,7 +33,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>4</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideMiddle</enum>
@@ -412,6 +412,9 @@
          <height>22</height>
         </rect>
        </property>
+       <property name="maxLength">
+        <number>999999999</number>
+       </property>
       </widget>
       <widget class="QLineEdit" name="le_typemodifier">
        <property name="geometry">
@@ -428,12 +431,12 @@
         <rect>
          <x>20</x>
          <y>100</y>
-         <width>111</width>
+         <width>141</width>
          <height>16</height>
         </rect>
        </property>
        <property name="text">
-        <string>Code à bar</string>
+        <string> Code à bar</string>
        </property>
       </widget>
      </widget>
@@ -519,7 +522,7 @@
        </property>
       </widget>
      </widget>
-     <widget class="QTableView" name="table_rechercher">
+     <widget class="QTableView" name="tab_rechercher">
       <property name="geometry">
        <rect>
         <x>550</x>
@@ -604,6 +607,92 @@
        </property>
       </widget>
      </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>Tri par nom</string>
+     </attribute>
+     <widget class="QTableView" name="tab_trie">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>11</y>
+        <width>581</width>
+        <height>661</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_trinom">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>180</y>
+        <width>201</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tri par nom</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_type">
+      <property name="geometry">
+       <rect>
+        <x>702</x>
+        <y>270</y>
+        <width>201</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tri par type</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_quantite">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>370</y>
+        <width>191</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tri par quantite</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_prix">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>450</y>
+        <width>181</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tri par prix</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="background_5">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>15</y>
+        <width>1061</width>
+        <height>901</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <zorder>background_5</zorder>
+     <zorder>tab_trie</zorder>
+     <zorder>pb_trinom</zorder>
+     <zorder>pb_type</zorder>
+     <zorder>pb_quantite</zorder>
+     <zorder>pb_prix</zorder>
     </widget>
    </widget>
   </widget>
