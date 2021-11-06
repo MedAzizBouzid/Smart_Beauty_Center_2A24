@@ -5,6 +5,8 @@
 #include <QMessageBox>
 #include "client.h"
 
+
+
 namespace Ui {
 class MainWindow;
 }
@@ -25,6 +27,12 @@ private slots:
 
 
     void on_pbrechercher_clicked();
+
+
+
+    void on_pbsms_clicked();
+
+    void on_codesms_returnPressed();
 
 private:
     Ui::MainWindow *ui;

@@ -41,8 +41,8 @@ public:
      QSqlQueryModel *afficher();
      bool supprimer(int);
      bool modifier(int);
-     QSqlQueryModel *rechercher(int code_C);
-
+     QSqlQueryModel *rechercher(int );
+     void statistique(QVector<double>, QVector<QString>);
 
 };
 

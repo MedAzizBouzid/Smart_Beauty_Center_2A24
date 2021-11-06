@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>7</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -331,19 +331,6 @@
        <string>ADRESSE MAIL</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="leservice">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>280</y>
-        <width>251</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="ladate">
       <property name="geometry">
        <rect>
@@ -396,6 +383,16 @@
        <string/>
       </property>
      </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>280</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
      <zorder>backgroundajouter_2</zorder>
      <zorder>pbretour</zorder>
      <zorder>pbajouter</zorder>
@@ -410,9 +407,9 @@
      <zorder>label_5</zorder>
      <zorder>label_6</zorder>
      <zorder>label_7</zorder>
-     <zorder>leservice</zorder>
      <zorder>ladate</zorder>
      <zorder>label_9</zorder>
+     <zorder>comboBox</zorder>
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
@@ -441,69 +438,6 @@
        </rect>
       </property>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_6">
-     <attribute name="title">
-      <string>supprimer client</string>
-     </attribute>
-     <widget class="QLabel" name="label_8">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>180</y>
-        <width>191</width>
-        <height>20</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Felix Titling</family>
-       </font>
-      </property>
-      <property name="text">
-       <string>Donner Code_Client</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lecodesupp">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>170</y>
-        <width>191</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="backgroundsupprimer">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>5</y>
-        <width>1151</width>
-        <height>601</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pb_supp">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>250</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Supprimer</string>
-      </property>
-     </widget>
-     <zorder>backgroundsupprimer</zorder>
-     <zorder>label_8</zorder>
-     <zorder>lecodesupp</zorder>
-     <zorder>pb_supp</zorder>
     </widget>
     <widget class="QWidget" name="tab_7">
      <attribute name="title">
@@ -703,16 +637,6 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="servicemodif">
-      <property name="geometry">
-       <rect>
-        <x>160</x>
-        <y>290</y>
-        <width>171</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pbmodifier">
       <property name="geometry">
        <rect>
@@ -739,6 +663,79 @@
        <string>retour</string>
       </property>
      </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>290</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="title">
+      <string>supprimer client</string>
+     </attribute>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Felix Titling</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Donner Code_Client</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lecodesupp">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>170</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="backgroundsupprimer">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>1151</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_supp">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>250</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <zorder>backgroundsupprimer</zorder>
+     <zorder>label_8</zorder>
+     <zorder>lecodesupp</zorder>
+     <zorder>pb_supp</zorder>
     </widget>
     <widget class="QWidget" name="tab_9">
      <attribute name="title">
@@ -802,8 +799,111 @@
     </widget>
     <widget class="QWidget" name="tab_8">
      <attribute name="title">
-      <string>services SMS</string>
+      <string>Statistiques</string>
      </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>SMS</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>230</y>
+        <width>251</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Type de SMS</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>49</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SMS fidelité</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>130</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Offres de salon </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pbsms">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>520</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Envoyer sms</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>520</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>retour</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Donner Code client</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="codesms">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>70</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tabVsms">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>70</y>
+        <width>401</width>
+        <height>351</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
