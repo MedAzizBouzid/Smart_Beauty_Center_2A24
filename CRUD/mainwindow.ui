@@ -36,7 +36,7 @@
          <enum>QTabWidget::Triangular</enum>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <property name="elideMode">
          <enum>Qt::ElideNone</enum>
@@ -58,7 +58,7 @@
          <attribute name="toolTip">
           <string>Ajout d&quot;un fournisseur</string>
          </attribute>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="pb_ajouter">
           <property name="geometry">
            <rect>
             <x>410</x>
@@ -142,7 +142,7 @@
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;code de service&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit_5">
+          <widget class="QLineEdit" name="Acode_s">
            <property name="geometry">
             <rect>
              <x>170</x>
@@ -174,7 +174,7 @@
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;description: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit_6">
+          <widget class="QLineEdit" name="Adescription_s">
            <property name="geometry">
             <rect>
              <x>140</x>
@@ -203,7 +203,7 @@
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;type: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit_7">
+          <widget class="QLineEdit" name="Atype_s">
            <property name="geometry">
             <rect>
              <x>160</x>
@@ -232,7 +232,7 @@
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;prix: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit_8">
+          <widget class="QLineEdit" name="Aprix">
            <property name="geometry">
             <rect>
              <x>160</x>
@@ -246,8 +246,8 @@
          <widget class="QLabel" name="label">
           <property name="geometry">
            <rect>
-            <x>-1150</x>
-            <y>20</y>
+            <x>-950</x>
+            <y>0</y>
             <width>2321</width>
             <height>831</height>
            </rect>
@@ -262,11 +262,11 @@
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap>../../../../../../Downloads/Untitled Diagram.png</pixmap>
+           <pixmap>../../../../../b1.jpg</pixmap>
           </property>
          </widget>
          <zorder>label</zorder>
-         <zorder>pushButton</zorder>
+         <zorder>pb_ajouter</zorder>
          <zorder>pushButton_2</zorder>
          <zorder>groupBox_2</zorder>
         </widget>
@@ -297,7 +297,7 @@
            <pixmap>../../../../b1.jpg</pixmap>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="Valide_Modif">
           <property name="geometry">
            <rect>
             <x>440</x>
@@ -381,7 +381,7 @@
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;code de service :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit">
+          <widget class="QLineEdit" name="lineEdit_modif">
            <property name="geometry">
             <rect>
              <x>150</x>
@@ -410,23 +410,13 @@
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;modifier le  prix :&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit_2">
+          <widget class="QLineEdit" name="lineEdit_nv_prix">
            <property name="geometry">
             <rect>
              <x>160</x>
              <y>180</y>
              <width>91</width>
              <height>22</height>
-            </rect>
-           </property>
-          </widget>
-          <widget class="QTextEdit" name="textEdit">
-           <property name="geometry">
-            <rect>
-             <x>160</x>
-             <y>120</y>
-             <width>111</width>
-             <height>41</height>
             </rect>
            </property>
           </widget>
@@ -441,6 +431,26 @@
            </property>
            <property name="text">
             <string>description</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="ndescriptions">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>130</y>
+             <width>113</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="type_nv">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>220</y>
+             <width>113</width>
+             <height>22</height>
+            </rect>
            </property>
           </widget>
          </widget>
@@ -553,7 +563,7 @@
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;code de service&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit_4">
+          <widget class="QLineEdit" name="Scode_s">
            <property name="geometry">
             <rect>
              <x>170</x>
@@ -563,6 +573,19 @@
             </rect>
            </property>
           </widget>
+         </widget>
+         <widget class="QPushButton" name="pb_supprimer">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>200</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Supprimer</string>
+          </property>
          </widget>
         </widget>
         <widget class="QWidget" name="affich">
@@ -636,10 +659,10 @@
           </property>
           <property name="geometry">
            <rect>
-            <x>20</x>
-            <y>50</y>
-            <width>341</width>
-            <height>111</height>
+            <x>-20</x>
+            <y>10</y>
+            <width>671</width>
+            <height>341</height>
            </rect>
           </property>
           <property name="mouseTracking">
@@ -657,32 +680,13 @@
           <property name="checkable">
            <bool>false</bool>
           </property>
-          <widget class="QLabel" name="label_13">
+          <widget class="QTableView" name="tab_service">
            <property name="geometry">
             <rect>
-             <x>0</x>
-             <y>80</y>
-             <width>151</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <family>MV Boli</family>
-             <italic>false</italic>
-            </font>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;code de service :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QLineEdit" name="lineEdit_9">
-           <property name="geometry">
-            <rect>
-             <x>170</x>
-             <y>80</y>
-             <width>113</width>
-             <height>22</height>
+             <x>40</x>
+             <y>30</y>
+             <width>621</width>
+             <height>301</height>
             </rect>
            </property>
           </widget>

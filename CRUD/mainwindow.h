@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include"service.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,7 +19,14 @@ public:
 private slots:
     void on_tabWidget_tabCloseRequested(int index);
 
+    void on_pb_ajouter_clicked();
+
+    void on_pb_supprimer_clicked();
+
+    void on_Valide_Modif_clicked();
+
 private:
     Ui::MainWindow *ui;
+    Service S;
 };
 #endif // MAINWINDOW_H
