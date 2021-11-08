@@ -9,18 +9,18 @@ class Client
 
 private:
    int code_C;
-   int Num_tel;
+   QString Num_tel;
    QString Nom, Prenom,Adresse_Mail,Date_RDV ,S_Attribue;
 
 public:
 
     //Constructeurs
     Client();
-    Client(int,int, QString, QString,QString,QString,QString);
+    Client(int,QString, QString, QString,QString,QString,QString);
 
     //Getters
     int getcode_C(){return code_C;}
-    int getNum_tel(){return Num_tel;}
+    QString getNum_tel(){return Num_tel;}
     QString getNom(){return Nom;}
      QString getPrenom(){return Prenom;}
      QString getAdresse_Mail(){return Adresse_Mail;}
@@ -29,7 +29,7 @@ public:
 
      //Setters
      void setcode_C(int code_C){this->code_C=code_C;}
-     void setNum_tel(int Num_tel){this->Num_tel=Num_tel;}
+     void setNum_tel(QString Num_tel){this->Num_tel=Num_tel;}
      void setNom(QString Nom){this->Nom=Nom;}
      void setPrenom(QString Prenom){this->Prenom=Prenom;}
      void setAdresse_Mail(QString Adresse_Mail){this->Adresse_Mail=Adresse_Mail;}

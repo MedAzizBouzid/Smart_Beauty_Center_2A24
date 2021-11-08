@@ -17,6 +17,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     QPixmap pix("C:/Users/Asus-PC/Desktop/background.png");
     ui->backgroundajouter_2->setPixmap(pix);
+        ui->backgroundaffich->setPixmap(pix);
+        ui->backgroundmodiff->setPixmap(pix);
+                ui->backgroundrech->setPixmap(pix);
     ui->comboBox->addItem("cheveux");
      ui->comboBox->addItem("soin");
       ui->comboBox->addItem("makeup");
@@ -29,14 +32,18 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->TABCLI->setModel(Ctmp.afficher());
         ui->lenom->setValidator(valiNom);
 
-        ui->lecode->setValidator(new QIntValidator(0, 99999999, this));
-        ui->lenum->setValidator(new QIntValidator(0, 99999999, this));
-        ui->lecodesupp->setValidator(new QIntValidator(0, 99999999, this));
+        ui->leprenom->setValidator(valiNom);
+        ui->lecode->setValidator(new QIntValidator(0, 9999, this));
+        ui->lenum->setValidator(new QIntValidator(0, 99999999, this) );
+        ui->ladresse->setValidator( new QRegExpValidator( QRegExp( "[a-z0-9_]{1,99}\\S@[a-z]{1,99}\\S\\.[a-z]{1,99}\\S+" ), this ) );
+        ui->ladate->setValidator( new QRegExpValidator( QRegExp( "[0-31_]\\S/[0-12_]\\S\\/[0-2021_]\\S+" ), this ) );
+        ui->lecodesupp->setValidator(new QIntValidator(0, 9999, this));
         ui->nommodif->setValidator(valiNom);
         ui->prenommodif->setValidator(valiNom);
-        ui->codemodif->setValidator(new QIntValidator(0, 99999999, this));
-        ui->numtelmodif->setValidator(new QIntValidator(0, 99999999, this));
-
+        ui->codemodif->setValidator(new QIntValidator(0, 9999, this));
+        ui->numtelmodif->setValidator( new QIntValidator(0, 99999999, this)  );
+        ui->adressemodif->setValidator( new QRegExpValidator( QRegExp( "[a-z0-9_]{1,99}\\S@[a-z]{1,99}\\S\\.[a-z]{1,99}\\S+" ), this ) );
+        ui->datemodif->setValidator( new QRegExpValidator( QRegExp( "[0-31_]\\S/[0-12_]\\S\\/[0-2021_]\\S+" ), this ) );
 
 }
 
@@ -49,7 +56,7 @@ void MainWindow::on_pbajouter_clicked()
 {
     //recuperer les infos saisies dans les champs
     int code_C=ui->lecode->text().toInt();
-        int Num_tel=ui->lenum->text().toInt();
+    QString Num_tel=ui->lenum->text();
     QString Nom=ui->lenom->text();
     QString Prenom=ui->leprenom->text();
     QString Adresse_Mail=ui->ladresse->text();
@@ -92,7 +99,7 @@ void MainWindow::on_pbmodifier_clicked()
 {
 
     int nvcode_C=ui->codemodif->text().toInt();
-        int Num_tel=ui->numtelmodif->text().toInt();
+    QString Num_tel=ui->numtelmodif->text();
     QString Nom=ui->nommodif->text();
     QString Prenom=ui->prenommodif->text();
     QString Adresse_Mail=ui->adressemodif->text();

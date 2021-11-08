@@ -6,7 +6,7 @@
 Client::Client()
 {
 code_C =0 ;
-Num_tel=0 ;
+Num_tel=" ";
 Nom=" ";
 Prenom=" ";
  Adresse_Mail=" "  ;
@@ -15,7 +15,7 @@ S_Attribue=" ";
 }
 
 
-Client::Client( int code_C ,int Num_tel , QString Nom, QString Prenom, QString Adresse_Mail, QString Date_RDV , QString S_Attribue)
+Client::Client( int code_C ,QString Num_tel , QString Nom, QString Prenom, QString Adresse_Mail, QString Date_RDV , QString S_Attribue)
 {
 
 this->code_C=code_C ;
@@ -36,11 +36,10 @@ bool Client::ajouter()
 
     QSqlQuery query;
     QString code_C_string= QString:: number(code_C);
-    QString Num_tel_string= QString:: number(Num_tel);
          query.prepare("INSERT INTO CLIENT (CODE_C,NUM_TEL,NOM,PRENOM,ADRESSE_MAIL, DATE_RDV, S_ATTRIBUE) "
                        "VALUES (:code_c,:num_tel,:nom,:prenom,:adresse_mail, :date_rdv, :s_attribue)");
          query.bindValue(":code_c", code_C_string);
-         query.bindValue(":num_tel", Num_tel_string);
+         query.bindValue(":num_tel", Num_tel);
          query.bindValue(":nom",Nom);
          query.bindValue(":prenom", Prenom);
 
@@ -83,10 +82,9 @@ bool Client::modifier(int code_C)
 {
 QSqlQuery query;
 QString code_string=QString::number(code_C);
-QString Num_tel_string= QString::number(Num_tel);
 query.prepare("Update client set Code_C=:code_C  ,Num_tel= :num_tel , Nom= :nom , Prenom = :prenom , Adresse_Mail = :adresse_mail, Date_RDV =:date_rdv , S_Attribue= :s_attribue  where Code_C = :code_C ");
 query.bindValue(":code_C", code_string);
-query.bindValue(":num_tel", Num_tel_string );
+query.bindValue(":num_tel", Num_tel );
 query.bindValue(":nom", Nom);
 query.bindValue(":prenom",Prenom);
 query.bindValue(":adresse_mail", Adresse_Mail);
