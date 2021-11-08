@@ -80,7 +80,7 @@ else // si cvpas QMessageBox::critical
 
 void MainWindow::on_pb_supp_clicked()
 {
- int code_C=ui->lecodesupp->text().toLong();
+ int code_C=ui->lecodesupp->text().toInt();
  bool test=Ctmp.supprimer(code_C);
  if(test)
  {
