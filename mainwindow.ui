@@ -33,7 +33,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>2</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideMiddle</enum>
@@ -403,19 +403,6 @@
         <string>Type</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="le_cabmodifier">
-       <property name="geometry">
-        <rect>
-         <x>180</x>
-         <y>100</y>
-         <width>151</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="maxLength">
-        <number>999999999</number>
-       </property>
-      </widget>
       <widget class="QLineEdit" name="le_typemodifier">
        <property name="geometry">
         <rect>
@@ -437,6 +424,16 @@
        </property>
        <property name="text">
         <string> Code à bar</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>100</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
        </property>
       </widget>
      </widget>
@@ -471,10 +468,10 @@
      <widget class="QGroupBox" name="groupBox_3">
       <property name="geometry">
        <rect>
-        <x>90</x>
-        <y>710</y>
-        <width>321</width>
-        <height>161</height>
+        <x>40</x>
+        <y>680</y>
+        <width>471</width>
+        <height>231</height>
        </rect>
       </property>
       <property name="font">
@@ -511,14 +508,86 @@
       <widget class="QPushButton" name="pb_rechercher">
        <property name="geometry">
         <rect>
-         <x>100</x>
-         <y>100</y>
-         <width>93</width>
+         <x>300</x>
+         <y>50</y>
+         <width>151</width>
          <height>28</height>
         </rect>
        </property>
        <property name="text">
-        <string>Rechercher</string>
+        <string> recherche par CAB</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>56</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_nomrechercher">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>110</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_typerechercher">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>170</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_recherchernom">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>110</y>
+         <width>141</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>REcherche Nom</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pb_recherchertype">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>170</y>
+         <width>141</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>REcherche type</string>
        </property>
       </widget>
      </widget>
@@ -586,8 +655,8 @@
       <widget class="QLineEdit" name="le_cabsupp">
        <property name="geometry">
         <rect>
-         <x>200</x>
-         <y>120</y>
+         <x>230</x>
+         <y>60</y>
          <width>161</width>
          <height>22</height>
         </rect>
@@ -604,6 +673,16 @@
        </property>
        <property name="text">
         <string>Code à bar </string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comobox_supprimer">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>120</y>
+         <width>131</width>
+         <height>22</height>
+        </rect>
        </property>
       </widget>
      </widget>
@@ -626,10 +705,15 @@
       <property name="geometry">
        <rect>
         <x>700</x>
-        <y>180</y>
+        <y>190</y>
         <width>201</width>
         <height>28</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+       </font>
       </property>
       <property name="text">
        <string>Tri par nom</string>
@@ -644,6 +728,11 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+       </font>
+      </property>
       <property name="text">
        <string>Tri par type</string>
       </property>
@@ -656,6 +745,11 @@
         <width>191</width>
         <height>28</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+       </font>
       </property>
       <property name="text">
        <string>Tri par quantite</string>
@@ -670,6 +764,11 @@
         <height>28</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+       </font>
+      </property>
       <property name="text">
        <string>Tri par prix</string>
       </property>
@@ -682,6 +781,11 @@
         <width>1061</width>
         <height>901</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+       </font>
       </property>
       <property name="text">
        <string>TextLabel</string>

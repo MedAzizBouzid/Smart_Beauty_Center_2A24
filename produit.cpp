@@ -93,14 +93,33 @@ bool test=true;
 }
 
 bool Produit::supprimer(int  cab)
-{ QSqlQuery query;
+{
+    QSqlQuery query;
 QString resCAB=QString::number(cab);
     query.prepare(" Delete from produits where Code_ABar=:cab");
     query.bindValue(":cab", resCAB);
+ return query.exec();
 
-    return query.exec();
+
 }
+QSqlQueryModel* Produit::wombo_combo(){
 
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("select Code_ABar from Produits");
+    return model;
+}
+QSqlQueryModel* Produit::wombo_comboNom(){
+
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("select Nom from Produits");
+    return model;
+}
+QSqlQueryModel* Produit::wombo_comboType(){
+
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("select Type_P from Produits");
+    return model;
+}
 bool Produit::modifier(int cab)
 {
 
@@ -140,6 +159,43 @@ QSqlQueryModel*  Produit::rechercher_cab(int cab)
      qry.exec();
      QSqlQueryModel *model= new QSqlQueryModel;
 model->setQuery(qry);
+
+
+    return model;
+
+
+
+ }
+QSqlQueryModel*  Produit::rechercher_nom(QString nom)
+ {
+
+    QSqlQuery qry;
+
+
+     qry.prepare("SELECT* FROM produits where Nom=:nom");
+     qry.bindValue(":nom",nom);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+model->setQuery(qry);
+
+
+    return model;
+
+
+
+ }
+QSqlQueryModel*  Produit::rechercher_type(QString type)
+ {
+
+    QSqlQuery qry;
+
+
+     qry.prepare("SELECT* FROM produits where Type_P=:type");
+     qry.bindValue(":Type_P",type);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+    model->setQuery(qry);
+
 
     return model;
 

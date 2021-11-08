@@ -4,6 +4,7 @@
 #include<QString>
 #include<QSqlQueryModel>
 #include<QMessageBox>
+#include<QCompleter>
 class Produit
 {
 public:
@@ -24,13 +25,17 @@ public:
     bool supprimer(int  );
     bool modifier(int);
     QSqlQueryModel* rechercher_cab(int);
+    QSqlQueryModel* rechercher_nom(QString nom);
+    QSqlQueryModel* rechercher_type(QString type);
     void chat();
   int  Notifier();
   QSqlQueryModel* trienom();
   QSqlQueryModel* trietype();
   QSqlQueryModel* triequantite();
   QSqlQueryModel* trieprix();
-
+  QSqlQueryModel* wombo_combo();
+QSqlQueryModel* wombo_comboNom();
+QSqlQueryModel* wombo_comboType();
 private:
 QString  NomProduit;
 float Prix;

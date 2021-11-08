@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include"produit.h"
+#include <QDirModel>
+#include <QCompleter>
 namespace Ui {
 class MainWindow;
 }
@@ -35,9 +37,17 @@ private slots:
 
     void on_pb_prix_clicked();
 
+    void on_pb_recherchernom_clicked();
+
+    void on_pb_recherchertype_clicked();
+
 private:
     Ui::MainWindow *ui;
     Produit Pro;
+    QCompleter* Model_Completer;
+      QCompleter* Model_Completer1;
+       QCompleter* Model_Completer2;
 };
+
 
 #endif // MAINWINDOW_H

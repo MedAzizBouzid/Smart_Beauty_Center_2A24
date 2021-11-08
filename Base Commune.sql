@@ -17,7 +17,7 @@ Prix FLOAT,
 CONSTRAINT Fournisseurs_pk PRIMARY KEY(Code_F)
 );
 CREATE TABLE Produits(
-Code_abar NUMBER ,
+Code_abar VARCHAR2(13 ) ,
 Nom VARCHAR2(50 char) ,
 Type_P VARCHAR2(50 char) ,
 Quantite int,
@@ -25,7 +25,7 @@ Prix FLOAT,
 CONSTRAINT Produits_pk PRIMARY KEY(Code_abar)
 );
 CREATE TABLE Fournir(
-Produit NUMBER,
+Produit VARCHAR2(13),
 Fournisseur NUMBER,
 CONSTRAINT Fournir_Produit_fk Foreign KEY(Produit) REFERENCES Produits(Code_abar),
 CONSTRAINT Fournir_Fournisseur_fk Foreign KEY(Fournisseur) REFERENCES Fournisseurs(Code_F),
@@ -42,7 +42,7 @@ Role VARCHAR2(50 char),
 CONSTRAINT Employe_pk PRIMARY KEY(CIN)
 );
 CREATE TABLE Manipuler(
-Prod NUMBER,
+Prod VARCHAR2(13 ),
 Emp NUMBER,
 CONSTRAINT Manipuler_Produit_fk Foreign KEY(Prod) REFERENCES Produits(Code_abar),
 CONSTRAINT Manipuler_Employe_fk Foreign KEY(Emp) REFERENCES Employe(CIN),
