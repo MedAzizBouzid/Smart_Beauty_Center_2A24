@@ -29,7 +29,7 @@ public:
     QSqlQueryModel * afficher();
     QSqlQueryModel* rechercher_nom(QString nnom);
     QSqlQueryModel * Tri_nom();
-
+    QSqlQueryModel* wombo_combo();
 private:
     int CIN,Telephone,H_Travail;
     QString Nom, Prenom,Adresse,Role;

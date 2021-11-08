@@ -17,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->le_id->setValidator(new QIntValidator(0,99999999,this));
     ui->CIN_supp->setValidator(new QIntValidator(0,99999999,this));
     ui->tableView->setModel(Etmp.afficher());
+    ui->comboBox->setModel(Etmp.wombo_combo());
+    ui->comboBox_2->setModel(Etmp.wombo_combo());
     ui->le_nom->setValidator(valiNom);
     ui->le_role->setValidator(valiNom);
     ui->le_prenom->setValidator(valiNom);
@@ -52,6 +54,8 @@ Employe E(id,telephone,H_travail,nom,prenom,adresse,role);
      if(test)
      {
          ui->tableView->setModel(Etmp.afficher());
+         ui->comboBox->setModel(Etmp.wombo_combo());
+         ui->comboBox_2->setModel(Etmp.wombo_combo());
          QMessageBox::information(nullptr,QObject::tr("OK"),
                  QObject::tr("ajout effectué\n"
                             "click cancel to exit."), QMessageBox::Cancel);
@@ -66,11 +70,13 @@ Employe E(id,telephone,H_travail,nom,prenom,adresse,role);
 
 void MainWindow::on_B_delete_clicked()
 {
-   int id =ui->CIN_supp->text().toInt();
+   int id = ui->comboBox_2->currentText().toInt();
    bool test=Etmp.supprimer(id);
    if(test)
    {
        ui->tableView->setModel(Etmp.afficher());
+       ui->comboBox->setModel(Etmp.wombo_combo());
+       ui->comboBox_2->setModel(Etmp.wombo_combo());
        QMessageBox::information(nullptr,QObject::tr("OK"),
                QObject::tr("suppression effectué\n"
                           "click cancel to exit."), QMessageBox::Cancel);
@@ -85,7 +91,7 @@ void MainWindow::on_B_delete_clicked()
 
 void MainWindow::on_B_Modifier_clicked()
 {
-    int id = ui->Mod_CIN->text().toInt();
+    int id = ui->comboBox->currentText().toInt();
         QString nom= ui->Mod_Nom->text();
         QString prenom= ui->Mod_Prenom->text();
         QString role= ui->Mod_Role->text();
@@ -97,6 +103,8 @@ Employe E(id,telephone,0,nom,prenom,adresse,role);
     {
 
            ui->tableView->setModel(Etmp.afficher());
+           ui->comboBox->setModel(Etmp.wombo_combo());
+           ui->comboBox_2->setModel(Etmp.wombo_combo());
     QMessageBox::information(nullptr, QObject::tr("modifier une agence"),
                       QObject::tr("Agence modifié.\n"
                                   "Click Cancel to exit."), QMessageBox::Cancel);

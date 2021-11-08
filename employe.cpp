@@ -100,3 +100,9 @@ QSqlQueryModel * Employe::Tri_nom()
  return model;
 
 }
+QSqlQueryModel* Employe::wombo_combo(){
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("select CIN from EMPLOYE");
+
+    return model;
+}
