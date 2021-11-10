@@ -23,6 +23,11 @@
       <height>631</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MV Boli</family>
+     </font>
+    </property>
     <property name="tabShape">
      <enum>QTabWidget::Triangular</enum>
     </property>
@@ -69,7 +74,7 @@
       </property>
       <property name="font">
        <font>
-        <family>Showcard Gothic</family>
+        <family>MV Boli</family>
        </font>
       </property>
       <property name="title">
@@ -97,6 +102,9 @@
          <height>21</height>
         </rect>
        </property>
+       <property name="text">
+        <string/>
+       </property>
       </widget>
       <widget class="QPushButton" name="B_Ajout">
        <property name="geometry">
@@ -109,7 +117,7 @@
        </property>
        <property name="font">
         <font>
-         <family>Showcard Gothic</family>
+         <family>MV Boli</family>
         </font>
        </property>
        <property name="cursor">
@@ -262,46 +270,38 @@
         <height>531</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+       </font>
+      </property>
      </widget>
      <widget class="QLineEdit" name="Recherche">
       <property name="geometry">
        <rect>
-        <x>780</x>
-        <y>100</y>
-        <width>113</width>
+        <x>590</x>
+        <y>50</y>
+        <width>131</width>
         <height>22</height>
        </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>720</x>
-        <y>90</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Nom</string>
       </property>
      </widget>
      <widget class="QTableView" name="tableView_2">
       <property name="geometry">
        <rect>
-        <x>650</x>
-        <y>180</y>
-        <width>321</width>
-        <height>191</height>
+        <x>540</x>
+        <y>190</y>
+        <width>501</width>
+        <height>281</height>
        </rect>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>860</x>
-        <y>420</y>
-        <width>93</width>
+        <x>750</x>
+        <y>90</y>
+        <width>121</width>
         <height>28</height>
        </rect>
       </property>
@@ -312,21 +312,21 @@
      <widget class="QPushButton" name="Tri_nom">
       <property name="geometry">
        <rect>
-        <x>720</x>
-        <y>420</y>
-        <width>93</width>
-        <height>28</height>
+        <x>890</x>
+        <y>90</y>
+        <width>121</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
-       <string>Tri_nom</string>
+       <string>Tri</string>
       </property>
      </widget>
      <widget class="QPushButton" name="PDF">
       <property name="geometry">
        <rect>
-        <x>590</x>
-        <y>420</y>
+        <x>750</x>
+        <y>510</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -334,6 +334,31 @@
       <property name="text">
        <string>PDF</string>
       </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_tri">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>50</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Prenom</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Role</string>
+       </property>
+      </item>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
@@ -351,7 +376,7 @@
       </property>
       <property name="font">
        <font>
-        <family>Showcard Gothic</family>
+        <family>MV Boli</family>
        </font>
       </property>
       <property name="title">
@@ -543,7 +568,7 @@
       </property>
       <property name="font">
        <font>
-        <family>Showcard Gothic</family>
+        <family>MV Boli</family>
        </font>
       </property>
       <property name="title">

@@ -28,6 +28,10 @@ public:
     bool supprimer(int);
     QSqlQueryModel * afficher();
     QSqlQueryModel* rechercher_nom(QString nnom);
+    QSqlQueryModel * Tri_role();
+    QSqlQueryModel*  rechercher_Role(QString rrole);
+    QSqlQueryModel*  rechercher_Prenom(QString pprenom);
+    QSqlQueryModel * Tri_prenom();
     QSqlQueryModel * Tri_nom();
     QSqlQueryModel* wombo_combo();
 private:

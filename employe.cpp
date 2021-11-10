@@ -74,6 +74,29 @@ QSqlQueryModel * Employe::afficher()
     model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
     return model;
 }
+QSqlQueryModel*  Employe::rechercher_Role(QString rrole)
+ {
+    QSqlQuery qry;
+     qry.prepare("SELECT * FROM Employe where Role=:role");
+     qry.bindValue(":role",rrole);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+model->setQuery(qry);
+
+    return model;
+ }
+QSqlQueryModel*  Employe::rechercher_Prenom(QString pprenom)
+ {
+
+    QSqlQuery qry;
+     qry.prepare("SELECT * FROM Employe where Prenom=:prenom");
+     qry.bindValue(":prenom",pprenom);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+model->setQuery(qry);
+
+    return model;
+ }
 QSqlQueryModel*  Employe::rechercher_nom(QString nnom)
  {
     QSqlQuery qry;
@@ -85,6 +108,36 @@ model->setQuery(qry);
 
     return model;
  }
+QSqlQueryModel * Employe::Tri_role()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+
+    model->setQuery("select * from Employe order by ROLE" );
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Role"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_Tel"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Prenom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Adresse"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
+
+ return model;
+
+}
+QSqlQueryModel * Employe::Tri_prenom()
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+
+    model->setQuery("select * from Employe order by PRENOM" );
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Role"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Num_Tel"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Nom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Prenom"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("Adresse"));
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("CIN"));
+
+ return model;
+
+}
 QSqlQueryModel * Employe::Tri_nom()
 {
     QSqlQueryModel *model=new QSqlQueryModel();

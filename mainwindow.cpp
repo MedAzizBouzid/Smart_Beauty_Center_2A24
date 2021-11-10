@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include "employe.h"
 #include "connection.h"
-#define NOM_RX "^([a-z]+[ ]?|[a-z])+$"
+#define NOM_RX "^([a-z]+[A-Z]+[ ]?|[a-z][A-Z])+$"
       QRegExp rxNom(NOM_RX);
       QRegExpValidator* valiNom= new QRegExpValidator(rxNom);
 
@@ -129,9 +129,15 @@ Employe E(id,telephone,0,nom,prenom,adresse,role);
 
 void MainWindow::on_pushButton_clicked()
 {
+    QSqlQueryModel* model;
+    QString tri=ui->comboBox_tri->currentText();
     QString nnom=ui->Recherche->text();
-
-          QSqlQueryModel* model=Etmp.rechercher_nom(nnom);
+if(tri=="Nom")
+         model=Etmp.rechercher_nom(nnom);
+if(tri=="Prenom")
+         model=Etmp.rechercher_Prenom(nnom);
+if(tri=="Role")
+         model=Etmp.rechercher_Role(nnom);
           if (model != nullptr)
  {
           ui->tableView_2->setModel(model);
@@ -140,8 +146,22 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_Tri_nom_clicked()
 {
+     QString tri=ui->comboBox_tri->currentText();
+     if(tri=="Nom")
+     {
      QSqlQueryModel* model=Etmp.Tri_nom();
      ui->tableView_2->setModel(model);
+     }
+     if(tri=="Prenom")
+     {
+     QSqlQueryModel* model=Etmp.Tri_prenom();
+     ui->tableView_2->setModel(model);
+     }
+     if(tri=="Role")
+     {
+     QSqlQueryModel* model=Etmp.Tri_role();
+     ui->tableView_2->setModel(model);
+     }
 
 }
 
