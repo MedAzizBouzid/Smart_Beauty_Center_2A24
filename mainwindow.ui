@@ -33,7 +33,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideMiddle</enum>
@@ -246,6 +246,9 @@
          <width>171</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="maxLength">
+        <number>999999999</number>
        </property>
       </widget>
      </widget>
