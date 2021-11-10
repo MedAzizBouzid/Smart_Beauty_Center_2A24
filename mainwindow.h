@@ -2,6 +2,15 @@
 #define MAINWINDOW_H
 #include "employe.h"
 #include <QMainWindow>
+#include <QCompleter>
+#include <QDirModel>
+#include <QTextDocument>
+#include <QtPrintSupport/QPrinter>
+#include <QTextStream>
+#include <QPrintDialog>
+
+
+
 
 namespace Ui {
 class MainWindow;
@@ -28,9 +37,12 @@ private slots:
 
     void on_Tri_nom_clicked();
 
+    void on_PDF_clicked();
+
 private:
     Ui::MainWindow *ui;
     Employe Etmp;
+    QCompleter* Model_Completer;
 };
 
 #endif // MAINWINDOW_H
