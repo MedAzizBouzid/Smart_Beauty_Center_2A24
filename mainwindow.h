@@ -4,7 +4,8 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include "client.h"
-
+#include <QCompleter>
+#include <QDirModel>
 
 
 namespace Ui {
@@ -34,9 +35,13 @@ private slots:
 
     void on_codesms_returnPressed();
 
+    void on_radioButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     Client Ctmp;
+    QCompleter* Model_Completer, Model_Completer1;
+
 };
 
 #endif // MAINWINDOW_H

@@ -41,7 +41,10 @@ public:
      QSqlQueryModel *afficher();
      bool supprimer(int);
      bool modifier(int);
+     QSqlQueryModel* rechav();
      QSqlQueryModel *rechercher(int );
+     QSqlQueryModel*rechercherDate(QString);
+     QSqlQueryModel*rechercherService(QString);
      void statistique(QVector<double>, QVector<QString>);
 
 };

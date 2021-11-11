@@ -23,20 +23,27 @@
       <height>621</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Script MT Bold</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
-      <string>AJOUTER CLIENT</string>
+      <string>Ajouter Client</string>
      </attribute>
      <widget class="QPushButton" name="pbretour">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>370</y>
+        <x>280</x>
+        <y>360</y>
         <width>111</width>
-        <height>41</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -54,10 +61,10 @@
      <widget class="QPushButton" name="pbajouter">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>370</y>
-        <width>111</width>
-        <height>41</height>
+        <x>140</x>
+        <y>360</y>
+        <width>121</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -349,7 +356,7 @@
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
-      <string>LISTE DES CLIENTS</string>
+      <string>Liste Clients</string>
      </attribute>
      <widget class="QLabel" name="backgroundaffich">
       <property name="geometry">
@@ -391,18 +398,8 @@ selection-color: rgb(241, 213, 255);
     </widget>
     <widget class="QWidget" name="tab_7">
      <attribute name="title">
-      <string>MODIFIER CLIENT</string>
+      <string>Modifier Client</string>
      </attribute>
-     <widget class="QLineEdit" name="codemodif">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>50</y>
-        <width>171</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="numtelmodif">
       <property name="geometry">
        <rect>
@@ -457,9 +454,9 @@ selection-color: rgb(241, 213, 255);
       <property name="geometry">
        <rect>
         <x>140</x>
-        <y>367</y>
-        <width>111</width>
-        <height>41</height>
+        <y>357</y>
+        <width>121</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -477,10 +474,10 @@ selection-color: rgb(241, 213, 255);
      <widget class="QPushButton" name="pushButton_3">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>370</y>
-        <width>111</width>
-        <height>41</height>
+        <x>290</x>
+        <y>360</y>
+        <width>121</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -523,7 +520,7 @@ selection-color: rgb(241, 213, 255);
        </font>
       </property>
       <property name="text">
-       <string>Nouveau Code client</string>
+       <string> Code client</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_18">
@@ -671,8 +668,17 @@ selection-color: rgb(241, 213, 255);
        <string/>
       </property>
      </widget>
+     <widget class="QComboBox" name="comboBox_modif">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>50</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
      <zorder>backgroundmodiff</zorder>
-     <zorder>codemodif</zorder>
      <zorder>numtelmodif</zorder>
      <zorder>nommodif</zorder>
      <zorder>prenommodif</zorder>
@@ -688,16 +694,17 @@ selection-color: rgb(241, 213, 255);
      <zorder>label_11</zorder>
      <zorder>label_12</zorder>
      <zorder>label_13</zorder>
+     <zorder>comboBox_modif</zorder>
     </widget>
     <widget class="QWidget" name="tab_6">
      <attribute name="title">
-      <string>SUPPRIMER CLIENT</string>
+      <string>Supprimer Client</string>
      </attribute>
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>180</y>
+        <x>60</x>
+        <y>190</y>
         <width>191</width>
         <height>20</height>
        </rect>
@@ -712,16 +719,6 @@ selection-color: rgb(241, 213, 255);
       </property>
       <property name="text">
        <string>Donner Code_Client</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lecodesupp">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>170</y>
-        <width>191</width>
-        <height>31</height>
-       </rect>
       </property>
      </widget>
      <widget class="QLabel" name="backgroundsupprimer">
@@ -740,10 +737,10 @@ selection-color: rgb(241, 213, 255);
      <widget class="QPushButton" name="pb_supp">
       <property name="geometry">
        <rect>
-        <x>260</x>
-        <y>230</y>
-        <width>111</width>
-        <height>41</height>
+        <x>270</x>
+        <y>240</y>
+        <width>131</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -758,27 +755,40 @@ selection-color: rgb(241, 213, 255);
        <string>Supprimer</string>
       </property>
      </widget>
+     <widget class="QComboBox" name="comboBox_Supp">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>180</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
      <zorder>backgroundsupprimer</zorder>
      <zorder>label_8</zorder>
-     <zorder>lecodesupp</zorder>
      <zorder>pb_supp</zorder>
+     <zorder>comboBox_Supp</zorder>
     </widget>
     <widget class="QWidget" name="tab_9">
      <attribute name="title">
-      <string>rechercher client</string>
+      <string>Rechercher Client</string>
      </attribute>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>470</y>
+        <x>20</x>
+        <y>20</y>
         <width>171</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Felix Titling</family>
+        <family>Script MT Bold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
@@ -788,8 +798,8 @@ selection-color: rgb(241, 213, 255);
      <widget class="QLineEdit" name="coderech">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>470</y>
+        <x>190</x>
+        <y>20</y>
         <width>211</width>
         <height>31</height>
        </rect>
@@ -798,11 +808,19 @@ selection-color: rgb(241, 213, 255);
      <widget class="QPushButton" name="pbrechercher">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>530</y>
-        <width>93</width>
-        <height>28</height>
+        <x>470</x>
+        <y>60</y>
+        <width>121</width>
+        <height>51</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Script MT Bold</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string>Rechercher</string>
@@ -811,11 +829,18 @@ selection-color: rgb(241, 213, 255);
      <widget class="QTableView" name="tabrech">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>50</y>
+        <x>20</x>
+        <y>190</y>
         <width>681</width>
         <height>391</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Script MT Bold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(217, 233, 255);</string>
@@ -825,13 +850,75 @@ selection-color: rgb(241, 213, 255);
       <property name="geometry">
        <rect>
         <x>5</x>
-        <y>5</y>
+        <y>-5</y>
         <width>1151</width>
-        <height>581</height>
+        <height>591</height>
        </rect>
       </property>
       <property name="text">
        <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Script MT Bold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Donner Date RDV </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="daterech">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Script MT Bold</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Donner Service</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_srech">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
       </property>
      </widget>
      <zorder>backgroundrech</zorder>
@@ -839,6 +926,10 @@ selection-color: rgb(241, 213, 255);
      <zorder>label</zorder>
      <zorder>coderech</zorder>
      <zorder>pbrechercher</zorder>
+     <zorder>label_14</zorder>
+     <zorder>daterech</zorder>
+     <zorder>label_15</zorder>
+     <zorder>comboBox_srech</zorder>
     </widget>
     <widget class="QWidget" name="tab_8">
      <attribute name="title">
@@ -852,8 +943,8 @@ selection-color: rgb(241, 213, 255);
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>200</x>
-        <y>230</y>
+        <x>470</x>
+        <y>40</y>
         <width>251</width>
         <height>231</height>
        </rect>
@@ -870,6 +961,9 @@ selection-color: rgb(241, 213, 255);
          <height>41</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(248, 222, 255);</string>
+       </property>
        <property name="text">
         <string>SMS fidelité</string>
        </property>
@@ -879,9 +973,12 @@ selection-color: rgb(241, 213, 255);
         <rect>
          <x>50</x>
          <y>130</y>
-         <width>141</width>
-         <height>21</height>
+         <width>181</width>
+         <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(213, 223, 255);</string>
        </property>
        <property name="text">
         <string>Offres de salon </string>
@@ -891,8 +988,8 @@ selection-color: rgb(241, 213, 255);
      <widget class="QPushButton" name="pbsms">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>520</y>
+        <x>420</x>
+        <y>540</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -904,8 +1001,8 @@ selection-color: rgb(241, 213, 255);
      <widget class="QPushButton" name="pushButton_9">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>520</y>
+        <x>560</x>
+        <y>540</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -917,7 +1014,7 @@ selection-color: rgb(241, 213, 255);
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>40</x>
         <y>60</y>
         <width>141</width>
         <height>51</height>
@@ -930,7 +1027,7 @@ selection-color: rgb(241, 213, 255);
      <widget class="QLineEdit" name="codesms">
       <property name="geometry">
        <rect>
-        <x>220</x>
+        <x>180</x>
         <y>70</y>
         <width>231</width>
         <height>31</height>
@@ -940,11 +1037,47 @@ selection-color: rgb(241, 213, 255);
      <widget class="QTableView" name="tabVsms">
       <property name="geometry">
        <rect>
-        <x>490</x>
-        <y>70</y>
+        <x>40</x>
+        <y>140</y>
         <width>401</width>
         <height>351</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fid">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>320</y>
+        <width>551</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(248, 222, 255);
+font: 75 8pt &quot;Script MT Bold&quot;;</string>
+      </property>
+      <property name="text">
+       <string> Félicitation cher client! vous benificiez d' un service gratuit! contactez nous pour en savoir plus.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="off">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>410</y>
+        <width>551</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(213, 223, 255);</string>
+      </property>
+      <property name="text">
+       <string> Anonnce Offres de salon! Beneficiez jusqu'a -50% de remise! contactez nous pour en savoir plus.</string>
       </property>
      </widget>
     </widget>

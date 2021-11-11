@@ -110,6 +110,43 @@ model->setQuery(qry);
 
  }
 
+QSqlQueryModel*  Client::rechercherDate(QString date)
+ {
 
+    QSqlQuery qry;
+
+
+     qry.prepare("SELECT* FROM client where Date_RDV=:date");
+     qry.bindValue(":date",date);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+model->setQuery(qry);
+
+    return model;
+
+ }
+
+QSqlQueryModel*  Client::rechercherService(QString service)
+ {
+
+    QSqlQuery qry;
+
+
+     qry.prepare("SELECT* FROM client where S_Attribue=:service");
+     qry.bindValue(":service",service);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+model->setQuery(qry);
+
+    return model;
+
+ }
+
+
+QSqlQueryModel* Client::rechav(){
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("select Code_C from client");
+    return model;
+}
 
 
