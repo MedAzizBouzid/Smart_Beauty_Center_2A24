@@ -149,4 +149,16 @@ QSqlQueryModel* Client::rechav(){
     return model;
 }
 
+QSqlQueryModel * Client::tridate_rdv(){
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("select * from client order by Date_RDV ");
+    model->setHeaderData(0,Qt::Horizontal,QObject::tr("code_C"));
+      model->setHeaderData(1,Qt::Horizontal,QObject::tr("Num_tel"));
+        model->setHeaderData(2,Qt::Horizontal,QObject::tr("Nom"));
+          model->setHeaderData(3,Qt::Horizontal,QObject::tr("Prenom"));
+            model->setHeaderData(4,Qt::Horizontal,QObject::tr("Adresse_Mail"));
+              model->setHeaderData(5,Qt::Horizontal,QObject::tr("Date_RDV"));
+                model->setHeaderData(6,Qt::Horizontal,QObject::tr("S_Attribue"));
 
+    return model;
+}

@@ -45,6 +45,7 @@ public:
      QSqlQueryModel *rechercher(int );
      QSqlQueryModel*rechercherDate(QString);
      QSqlQueryModel*rechercherService(QString);
+     QSqlQueryModel *tridate_rdv();
      void statistique(QVector<double>, QVector<QString>);
 
 };

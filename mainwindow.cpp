@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->backgroundaffich->setPixmap(pix);
         ui->backgroundmodiff->setPixmap(pix);
                 ui->backgroundrech->setPixmap(pix);
-
+ ui->backgroundrdv->setPixmap(pix);
     ui->comboBox->addItem("cheveux");
      ui->comboBox->addItem("soin");
       ui->comboBox->addItem("makeup");
@@ -207,7 +207,13 @@ on_codesms_returnPressed();
 
 
 
-void MainWindow::on_radioButton_clicked()
+
+
+void MainWindow::on_pb_tri_clicked()
 {
-    ui->fid->set
+     QSqlQueryModel* model=Ctmp.tridate_rdv();
+if (model != nullptr)
+{
+     ui->TVTRI->setModel(model);
+}
 }

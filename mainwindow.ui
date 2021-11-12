@@ -31,7 +31,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -933,8 +933,74 @@ selection-color: rgb(241, 213, 255);
     </widget>
     <widget class="QWidget" name="tab_8">
      <attribute name="title">
-      <string>Statistiques</string>
+      <string>Rendez-vous</string>
      </attribute>
+     <widget class="QPushButton" name="pb_tri">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Trier les dates de RDV</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="TVTRI">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>561</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Script MT Bold</family>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 206, 162);
+selection-color: rgb(255, 203, 129);</string>
+      </property>
+     </widget>
+     <widget class="QCalendarWidget" name="calendarWidget">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>200</y>
+        <width>304</width>
+        <height>218</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="backgroundrdv">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>-5</y>
+        <width>1151</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>backgroundrdv</zorder>
+     <zorder>pb_tri</zorder>
+     <zorder>TVTRI</zorder>
+     <zorder>calendarWidget</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
