@@ -37,7 +37,7 @@ private slots:
 
     void on_radioButton_clicked();
 
-    void on_pb_tri_clicked();
+
 
 private:
     Ui::MainWindow *ui;

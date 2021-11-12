@@ -31,7 +31,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -935,31 +935,13 @@ selection-color: rgb(241, 213, 255);
      <attribute name="title">
       <string>Rendez-vous</string>
      </attribute>
-     <widget class="QPushButton" name="pb_tri">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>10</y>
-        <width>211</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Trier les dates de RDV</string>
-      </property>
-     </widget>
      <widget class="QTableView" name="TVTRI">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>80</y>
-        <width>561</width>
-        <height>491</height>
+        <x>10</x>
+        <y>240</y>
+        <width>681</width>
+        <height>351</height>
        </rect>
       </property>
       <property name="font">
@@ -977,10 +959,10 @@ selection-color: rgb(255, 203, 129);</string>
      <widget class="QCalendarWidget" name="calendarWidget">
       <property name="geometry">
        <rect>
-        <x>700</x>
-        <y>200</y>
-        <width>304</width>
-        <height>218</height>
+        <x>50</x>
+        <y>10</y>
+        <width>571</width>
+        <height>211</height>
        </rect>
       </property>
      </widget>
@@ -998,7 +980,6 @@ selection-color: rgb(255, 203, 129);</string>
       </property>
      </widget>
      <zorder>backgroundrdv</zorder>
-     <zorder>pb_tri</zorder>
      <zorder>TVTRI</zorder>
      <zorder>calendarWidget</zorder>
     </widget>
@@ -1144,6 +1125,19 @@ font: 75 8pt &quot;Script MT Bold&quot;;</string>
       </property>
       <property name="text">
        <string> Anonnce Offres de salon! Beneficiez jusqu'a -50% de remise! contactez nous pour en savoir plus.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bcksms">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>-15</y>
+        <width>1151</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>

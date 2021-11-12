@@ -18,12 +18,13 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     ui->setupUi(this);
-
+    ui->TVTRI->setModel(Ctmp.tridate_rdv());//Tri
     QPixmap pix("C:/Users/Asus-PC/Desktop/background.png");
     ui->backgroundajouter_2->setPixmap(pix);
         ui->backgroundaffich->setPixmap(pix);
         ui->backgroundmodiff->setPixmap(pix);
                 ui->backgroundrech->setPixmap(pix);
+                 ui->bcksms->setPixmap(pix);
  ui->backgroundrdv->setPixmap(pix);
     ui->comboBox->addItem("cheveux");
      ui->comboBox->addItem("soin");
@@ -178,7 +179,7 @@ void MainWindow::on_pbrechercher_clicked()
 
 void MainWindow::on_codesms_returnPressed()
 {
-    int code_C=ui->coderech->text().toInt();
+    int code_C=ui->codesms->text().toInt();
 
           QSqlQueryModel* model=Ctmp.rechercher(code_C);
           if (model != nullptr)
@@ -193,13 +194,14 @@ void MainWindow::on_pbsms_clicked()
 {
 
 on_codesms_returnPressed();
-
+//QModelIndex index = ui->tabVsms->model()->index(index.row(),1); //affichage du num fi messagebox
     if(ui->radioButton->isChecked())
-    {  QMessageBox::information(0, "type de SMS","SMS fidelité envoyé ");
+    {  QMessageBox::information(0, tr("type de SMS"),tr("SMS fidelité envoyé au client %1").arg(ui->codesms->text()));
 
     }
     if(ui->radioButton_2->isChecked())
-    {  QMessageBox::information(0, "type de SMS","SMS offres envoyé");
+    {
+        QMessageBox::information(0, tr("type de SMS"),tr("SMS offres envoyé au client %1").arg(ui->codesms->text()));
 
     }
 
@@ -209,11 +211,3 @@ on_codesms_returnPressed();
 
 
 
-void MainWindow::on_pb_tri_clicked()
-{
-     QSqlQueryModel* model=Ctmp.tridate_rdv();
-if (model != nullptr)
-{
-     ui->TVTRI->setModel(model);
-}
-}
