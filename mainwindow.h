@@ -35,7 +35,7 @@ private slots:
 
     void on_codesms_returnPressed();
 
-    void on_radioButton_clicked();
+
 
 
 

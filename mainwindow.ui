@@ -31,7 +31,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -507,7 +507,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>10</x>
         <y>50</y>
-        <width>151</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -528,7 +528,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>10</x>
         <y>80</y>
-        <width>201</width>
+        <width>211</width>
         <height>41</height>
        </rect>
       </property>
@@ -864,7 +864,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>20</x>
         <y>70</y>
-        <width>131</width>
+        <width>171</width>
         <height>31</height>
        </rect>
       </property>
@@ -895,7 +895,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>20</x>
         <y>130</y>
-        <width>121</width>
+        <width>151</width>
         <height>31</height>
        </rect>
       </property>
@@ -995,6 +995,9 @@ selection-color: rgb(255, 203, 129);</string>
         <width>251</width>
         <height>231</height>
        </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
       </property>
       <property name="title">
        <string>Type de SMS</string>
@@ -1130,8 +1133,8 @@ font: 75 8pt &quot;Script MT Bold&quot;;</string>
      <widget class="QLabel" name="bcksms">
       <property name="geometry">
        <rect>
-        <x>5</x>
-        <y>-15</y>
+        <x>0</x>
+        <y>0</y>
         <width>1151</width>
         <height>601</height>
        </rect>
@@ -1140,6 +1143,15 @@ font: 75 8pt &quot;Script MT Bold&quot;;</string>
        <string/>
       </property>
      </widget>
+     <zorder>bcksms</zorder>
+     <zorder>groupBox</zorder>
+     <zorder>pbsms</zorder>
+     <zorder>pushButton_9</zorder>
+     <zorder>label_17</zorder>
+     <zorder>codesms</zorder>
+     <zorder>tabVsms</zorder>
+     <zorder>fid</zorder>
+     <zorder>off</zorder>
     </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">
