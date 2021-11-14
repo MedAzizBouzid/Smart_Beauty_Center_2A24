@@ -43,10 +43,11 @@ public:
      bool modifier(int);
      QSqlQueryModel* rechav();
      QSqlQueryModel *rechercher(int );
+     QSqlQueryModel*recherchermail(QString);
      QSqlQueryModel*rechercherDate(QString);
      QSqlQueryModel*rechercherService(QString);
      QSqlQueryModel *tridate_rdv();
-     void statistique(QVector<double>, QVector<QString>);
+
 
 };
 

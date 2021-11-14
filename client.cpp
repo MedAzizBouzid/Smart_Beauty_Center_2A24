@@ -110,6 +110,22 @@ model->setQuery(qry);
 
  }
 
+QSqlQueryModel*  Client::recherchermail(QString Adresse_Mail)
+ {
+
+    QSqlQuery qry;
+
+
+     qry.prepare("SELECT* FROM client where Adresse_Mail=:Adresse_Mail");
+     qry.bindValue(":Adresse_Mail",Adresse_Mail);
+     qry.exec();
+     QSqlQueryModel *model= new QSqlQueryModel;
+model->setQuery(qry);
+
+    return model;
+
+ }
+
 QSqlQueryModel*  Client::rechercherDate(QString date)
  {
 

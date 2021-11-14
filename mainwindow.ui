@@ -31,7 +31,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -152,7 +152,7 @@
        <rect>
         <x>10</x>
         <y>160</y>
-        <width>61</width>
+        <width>131</width>
         <height>41</height>
        </rect>
       </property>
@@ -173,7 +173,7 @@
        <rect>
         <x>10</x>
         <y>40</y>
-        <width>71</width>
+        <width>141</width>
         <height>31</height>
        </rect>
       </property>
@@ -194,7 +194,7 @@
        <rect>
         <x>10</x>
         <y>120</y>
-        <width>81</width>
+        <width>131</width>
         <height>31</height>
        </rect>
       </property>
@@ -257,7 +257,7 @@
        <rect>
         <x>10</x>
         <y>200</y>
-        <width>111</width>
+        <width>131</width>
         <height>31</height>
        </rect>
       </property>
@@ -291,7 +291,7 @@
        <rect>
         <x>10</x>
         <y>280</y>
-        <width>71</width>
+        <width>131</width>
         <height>31</height>
        </rect>
       </property>
@@ -549,7 +549,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>10</x>
         <y>130</y>
-        <width>151</width>
+        <width>191</width>
         <height>31</height>
        </rect>
       </property>
@@ -570,7 +570,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>10</x>
         <y>170</y>
-        <width>121</width>
+        <width>191</width>
         <height>41</height>
        </rect>
       </property>
@@ -591,7 +591,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>10</x>
         <y>210</y>
-        <width>171</width>
+        <width>201</width>
         <height>31</height>
        </rect>
       </property>
@@ -612,7 +612,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>10</x>
         <y>250</y>
-        <width>201</width>
+        <width>211</width>
         <height>31</height>
        </rect>
       </property>
@@ -633,7 +633,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>10</x>
         <y>290</y>
-        <width>121</width>
+        <width>181</width>
         <height>31</height>
        </rect>
       </property>
@@ -703,7 +703,7 @@ selection-color: rgb(241, 213, 255);
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>40</x>
         <y>190</y>
         <width>191</width>
         <height>20</height>
@@ -798,7 +798,7 @@ selection-color: rgb(241, 213, 255);
      <widget class="QLineEdit" name="coderech">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>200</x>
         <y>20</y>
         <width>211</width>
         <height>31</height>
@@ -864,7 +864,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>20</x>
         <y>70</y>
-        <width>171</width>
+        <width>181</width>
         <height>31</height>
        </rect>
       </property>
@@ -883,7 +883,7 @@ selection-color: rgb(241, 213, 255);
      <widget class="QLineEdit" name="daterech">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>200</x>
         <y>70</y>
         <width>211</width>
         <height>31</height>
@@ -895,7 +895,7 @@ selection-color: rgb(241, 213, 255);
        <rect>
         <x>20</x>
         <y>130</y>
-        <width>151</width>
+        <width>171</width>
         <height>31</height>
        </rect>
       </property>
@@ -914,7 +914,7 @@ selection-color: rgb(241, 213, 255);
      <widget class="QComboBox" name="comboBox_srech">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>200</x>
         <y>130</y>
         <width>211</width>
         <height>31</height>
@@ -985,29 +985,29 @@ selection-color: rgb(255, 203, 129);</string>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
-      <string>SMS</string>
+      <string>Mail</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>470</x>
-        <y>40</y>
-        <width>251</width>
-        <height>231</height>
+        <x>430</x>
+        <y>80</y>
+        <width>261</width>
+        <height>241</height>
        </rect>
       </property>
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
       <property name="title">
-       <string>Type de SMS</string>
+       <string>Type de Mail</string>
       </property>
       <widget class="QRadioButton" name="radioButton">
        <property name="geometry">
         <rect>
-         <x>50</x>
+         <x>30</x>
          <y>49</y>
-         <width>181</width>
+         <width>201</width>
          <height>41</height>
         </rect>
        </property>
@@ -1015,15 +1015,15 @@ selection-color: rgb(255, 203, 129);</string>
         <string notr="true">background-color: rgb(248, 222, 255);</string>
        </property>
        <property name="text">
-        <string>SMS fidelité</string>
+        <string>Mail fidelité</string>
        </property>
       </widget>
       <widget class="QRadioButton" name="radioButton_2">
        <property name="geometry">
         <rect>
-         <x>50</x>
+         <x>30</x>
          <y>130</y>
-         <width>181</width>
+         <width>211</width>
          <height>41</height>
         </rect>
        </property>
@@ -1031,103 +1031,31 @@ selection-color: rgb(255, 203, 129);</string>
         <string notr="true">background-color: rgb(213, 223, 255);</string>
        </property>
        <property name="text">
-        <string>Offres de salon </string>
+        <string>Mail offres de salon </string>
        </property>
       </widget>
-     </widget>
-     <widget class="QPushButton" name="pbsms">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>540</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Envoyer sms</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_9">
-      <property name="geometry">
-       <rect>
-        <x>560</x>
-        <y>540</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>retour</string>
-      </property>
      </widget>
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>20</x>
         <y>60</y>
         <width>141</width>
         <height>51</height>
        </rect>
       </property>
       <property name="text">
-       <string>Donner Code client</string>
+       <string>Donner mail du client</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="codesms">
+     <widget class="QLineEdit" name="codemail">
       <property name="geometry">
        <rect>
-        <x>180</x>
+        <x>160</x>
         <y>70</y>
         <width>231</width>
         <height>31</height>
        </rect>
-      </property>
-     </widget>
-     <widget class="QTableView" name="tabVsms">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>140</y>
-        <width>401</width>
-        <height>351</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="fid">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>320</y>
-        <width>551</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(248, 222, 255);
-font: 75 8pt &quot;Script MT Bold&quot;;</string>
-      </property>
-      <property name="text">
-       <string> Félicitation cher client! vous benificiez d' un service gratuit! contactez nous pour en savoir plus.</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="off">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>410</y>
-        <width>551</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(213, 223, 255);</string>
-      </property>
-      <property name="text">
-       <string> Anonnce Offres de salon! Beneficiez jusqu'a -50% de remise! contactez nous pour en savoir plus.</string>
       </property>
      </widget>
      <widget class="QLabel" name="bcksms">
@@ -1143,15 +1071,35 @@ font: 75 8pt &quot;Script MT Bold&quot;;</string>
        <string/>
       </property>
      </widget>
+     <widget class="QPushButton" name="pb_mail">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>350</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Envoyer Mail</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tvmail">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>131</y>
+        <width>391</width>
+        <height>351</height>
+       </rect>
+      </property>
+     </widget>
      <zorder>bcksms</zorder>
      <zorder>groupBox</zorder>
-     <zorder>pbsms</zorder>
-     <zorder>pushButton_9</zorder>
      <zorder>label_17</zorder>
-     <zorder>codesms</zorder>
-     <zorder>tabVsms</zorder>
-     <zorder>fid</zorder>
-     <zorder>off</zorder>
+     <zorder>codemail</zorder>
+     <zorder>pb_mail</zorder>
+     <zorder>tvmail</zorder>
     </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">

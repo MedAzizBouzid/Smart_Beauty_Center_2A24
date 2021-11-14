@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QIntValidator>
 #include <QComboBox>
+#include "smtp.h"
 
 
 #define NOM_RX "^([a-z]+[ ]?|[a-z])+$"
@@ -19,6 +20,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     ui->TVTRI->setModel(Ctmp.tridate_rdv());//Tri
+
+    QString Adresse_Mail=ui->codemail->text();
+    QSqlQueryModel* model=Ctmp.recherchermail(Adresse_Mail);
+   ui->tvmail->setModel(model);
+
     QPixmap pix("C:/Users/Asus-PC/Desktop/background.png");
     ui->backgroundajouter_2->setPixmap(pix);
         ui->backgroundaffich->setPixmap(pix);
@@ -47,7 +53,7 @@ MainWindow::MainWindow(QWidget *parent) :
         Model_Completer=new QCompleter(this);
             Model_Completer->setModel(Ctmp.rechav());
             ui->coderech->setCompleter(Model_Completer);
-             ui->codesms->setCompleter(Model_Completer);
+             ui->codemail->setCompleter(Model_Completer);
         ui->lenom->setValidator(valiNom);
 
         ui->leprenom->setValidator(valiNom);
@@ -177,37 +183,52 @@ void MainWindow::on_pbrechercher_clicked()
 
 
 
-void MainWindow::on_codesms_returnPressed()
+void MainWindow::on_codemail_returnPressed()
 {
-    int code_C=ui->codesms->text().toInt();
+    QString Adresse_Mail=ui->codemail->text();
 
-          QSqlQueryModel* model=Ctmp.rechercher(code_C);
+          QSqlQueryModel* model=Ctmp.recherchermail(Adresse_Mail);
           if (model != nullptr)
                                  {
 
-                                     ui->tabVsms->setModel(model);
+                                     ui->tvmail->setModel(model);
                                  }
 }
 
 
-void MainWindow::on_pbsms_clicked()
+void MainWindow::sendMail()
 {
-
-on_codesms_returnPressed();
-//QModelIndex index = ui->tabVsms->model()->index(index.row(),1); //affichage du num fi messagebox
-    if(ui->radioButton->isChecked())
-    {  QMessageBox::information(0, tr("type de SMS"),tr("SMS fidelité envoyé au client %1").arg(ui->codesms->text()));
-
-    }
-    if(ui->radioButton_2->isChecked())
-    {
-        QMessageBox::information(0, tr("type de SMS"),tr("SMS offres envoyé au client %1").arg(ui->codesms->text()));
-
-    }
-
+    Smtp *smtp= new Smtp("mariem52bel@gmail.com","Azertyuiop","smtp.gmail.com");
+    connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
+     if(ui->radioButton->isChecked())
+     {
+         smtp->sendMail("",ui->codemail->text(),"Mail fidélité","Félicitation cher client!\nGrace à votre fidélité vous bénificiez d'un service gratuit.\n Contactez nous pour en savoir plus.\n");
+      }
+     else if(ui->radioButton_2->isChecked())
+     {
+         smtp->sendMail("",ui->codemail->text(),"Offres","Annonce Offres !\nProfitez de nos offres jusqu'à -50% solde!\n Contactez nous pour en savoir plus.\n");
+        }
 }
 
+void MainWindow::mailSent(QString status)
+{
+    if(status == "Message sent")
+        QMessageBox::warning( 0, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
+}
 
+void MainWindow::on_pb_mail_clicked()
+{
 
+      Smtp *smtp= new Smtp("mariem52bel@gmail.com","selenagomez","smtp.gmail.com");
+      connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
+       if(ui->radioButton->isChecked())
+       {
+           smtp->sendMail("",ui->codemail->text(),"Mail fidélité","Félicitation cher client!\nGrace à votre fidélité vous bénificiez d'un service gratuit.\n Contactez nous pour en savoir plus.\n");
+        }
+       else if(ui->radioButton_2->isChecked())
+       {
+           smtp->sendMail("",ui->codemail->text(),"Offres","Annonce Offres !\nProfitez de nos offres jusqu'à -50% solde!\n Contactez nous pour en savoir plus.\n");
+          }
+     void mailSent(QString)  ;
 
-
+}

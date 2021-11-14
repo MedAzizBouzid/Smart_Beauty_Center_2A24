@@ -6,6 +6,7 @@
 #include "client.h"
 #include <QCompleter>
 #include <QDirModel>
+#include "smtp.h"
 
 
 namespace Ui {
@@ -30,13 +31,13 @@ private slots:
     void on_pbrechercher_clicked();
 
 
-
-    void on_pbsms_clicked();
-
-    void on_codesms_returnPressed();
+    void on_codemail_returnPressed();
 
 
+    void on_pb_mail_clicked();
 
+    void sendMail();
+        void mailSent(QString);
 
 
 private:
