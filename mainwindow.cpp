@@ -32,6 +32,10 @@ MainWindow::MainWindow(QWidget *parent) :
                 ui->backgroundrech->setPixmap(pix);
                  ui->bcksms->setPixmap(pix);
  ui->backgroundrdv->setPixmap(pix);
+ QPixmap bf("C:/Users/Asus-PC/Desktop/bf.png");
+ ui->brochfront->setPixmap(bf);
+ QPixmap bb("C:/Users/Asus-PC/Desktop/bb.png");
+ ui->brochback->setPixmap(bb);
     ui->comboBox->addItem("cheveux");
      ui->comboBox->addItem("soin");
       ui->comboBox->addItem("makeup");

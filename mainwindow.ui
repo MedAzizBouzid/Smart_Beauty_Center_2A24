@@ -31,7 +31,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>7</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -1011,6 +1011,13 @@ selection-color: rgb(255, 203, 129);</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <family>Script MT Bold</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(248, 222, 255);</string>
        </property>
@@ -1026,6 +1033,13 @@ selection-color: rgb(255, 203, 129);</string>
          <width>211</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Script MT Bold</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(213, 223, 255);</string>
@@ -1103,22 +1117,132 @@ selection-color: rgb(255, 203, 129);</string>
     </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>catalogue</string>
+      <string>Brochure </string>
      </attribute>
-     <widget class="QLabel" name="background">
+     <widget class="QLabel" name="brochfront">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
-        <width>1101</width>
-        <height>581</height>
+        <y>100</y>
+        <width>541</width>
+        <height>481</height>
        </rect>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../background.png</pixmap>
+       <pixmap>../brochfrontt.PNG</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="brochback">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>110</y>
+        <width>581</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../brochbbbbb.PNG</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>370</y>
+        <width>171</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#ffddf9;&quot;&gt;Brochure &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#ffddf9;&quot;&gt;Prix /Promos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>130</y>
+        <width>171</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;----------Cheveux----------------&lt;/p&gt;&lt;p&gt;Coupe-----------------------50dt&lt;/p&gt;&lt;p&gt;Coiffure--------------------100dt&lt;/p&gt;&lt;p&gt;Brushing-------------------60dt&lt;/p&gt;&lt;p&gt;Coloration------------------300dt&lt;/p&gt;&lt;p&gt;&lt;br/&gt;---------Maquillage--------------&lt;/p&gt;&lt;p&gt;Maquillage de mariée----750dt&lt;/p&gt;&lt;p&gt;Maquillage ----------------250dt&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;----------Ongles----------------&lt;/p&gt;&lt;p&gt;Gel permanent--------------50dt&lt;/p&gt;&lt;p&gt;Capsules--------------------80dt&lt;/p&gt;&lt;p&gt;Design ongles---------------40dt&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>120</y>
+        <width>141</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;----------Soins----------------&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soin visage------------120dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soins mains---------- -50dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soins pieds-------------60dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soins corps------------250dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Masssage-------------450dt&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>180</y>
+        <width>191</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#6e2e76;&quot;&gt;-50% Sur tout combo &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#6e2e76;&quot;&gt;Cheveux + Mquillage&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#6e2e76;&quot;&gt;+ Ongles +Soins&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>240</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-style:italic; text-decoration: underline; color:#ab3271;&quot;&gt;-20% special revellion! &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;entamez la nouvelle &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;année avec un new look! &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>130</y>
+        <width>161</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#9e0e59;&quot;&gt;Kit mariée: &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#9e0e59;&quot;&gt;Seulement à 1000dt!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#9e0e59;&quot;&gt;coiffure+maquillage+ongles&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1141</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 207, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic; text-decoration: underline; color:#ac2b70;&quot;&gt;Notre Brochure &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic; text-decoration: underline; color:#ac2b70;&quot;&gt;Novembre/Decembre 2021&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
