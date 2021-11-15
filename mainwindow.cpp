@@ -19,6 +19,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     ui->setupUi(this);
+
     ui->TVTRI->setModel(Ctmp.tridate_rdv());//Tri
 
     QString Adresse_Mail=ui->codemail->text();
@@ -31,11 +32,14 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->backgroundmodiff->setPixmap(pix);
                 ui->backgroundrech->setPixmap(pix);
                  ui->bcksms->setPixmap(pix);
+ ui->backgroundsupprimer->setPixmap(pix);
  ui->backgroundrdv->setPixmap(pix);
  QPixmap bf("C:/Users/Asus-PC/Desktop/bf.png");
  ui->brochfront->setPixmap(bf);
  QPixmap bb("C:/Users/Asus-PC/Desktop/bb.png");
  ui->brochback->setPixmap(bb);
+
+
     ui->comboBox->addItem("cheveux");
      ui->comboBox->addItem("soin");
       ui->comboBox->addItem("makeup");
@@ -52,27 +56,30 @@ MainWindow::MainWindow(QWidget *parent) :
 
          ui->comboBox_modif->setModel(Ctmp.rechav());
          ui->comboBox_Supp->setModel(Ctmp.rechav());
-        ui->backgroundsupprimer->setPixmap(pix);
+
         ui->TABCLI->setModel(Ctmp.afficher());
         Model_Completer=new QCompleter(this);
             Model_Completer->setModel(Ctmp.rechav());
             ui->coderech->setCompleter(Model_Completer);
              ui->codemail->setCompleter(Model_Completer);
-        ui->lenom->setValidator(valiNom);
+             Model_Completer=new QCompleter(this);
+                 Model_Completer->setModel(Ctmp.rechavmail());
+                 ui->codemail->setCompleter(Model_Completer);
 
+        ui->lenom->setValidator(valiNom);
         ui->leprenom->setValidator(valiNom);
         ui->lecode->setValidator(new QIntValidator(0, 9999, this));
         ui->lenum->setValidator(new QIntValidator(0, 99999999, this) );
         ui->ladresse->setValidator( new QRegExpValidator( QRegExp( "[a-z0-9_]{1,99}\\S@[a-z]{1,99}\\S\\.[a-z]{1,99}\\S+" ), this ) );
         ui->ladate->setValidator( new QRegExpValidator( QRegExp( "[0-31_]\\S/[0-12_]\\S\\/[0-2021_]\\S+" ), this ) );
-
         ui->nommodif->setValidator(valiNom);
         ui->prenommodif->setValidator(valiNom);
-
         ui->numtelmodif->setValidator( new QIntValidator(0, 99999999, this)  );
         ui->adressemodif->setValidator( new QRegExpValidator( QRegExp( "[a-z0-9_]{1,99}\\S@[a-z]{1,99}\\S\\.[a-z]{1,99}\\S+" ), this ) );
         ui->datemodif->setValidator( new QRegExpValidator( QRegExp( "[0-31_]\\S/[0-12_]\\S\\/[0-2021_]\\S+" ), this ) );
-
+        ui->coderech->setValidator(new QIntValidator(0, 9999, this));
+        ui->daterech->setValidator( new QRegExpValidator( QRegExp( "[0-31_]\\S/[0-12_]\\S\\/[0-2021_]\\S+" ), this ) );
+        ui->codemail->setValidator( new QRegExpValidator( QRegExp( "[a-z0-9_]{1,99}\\S@[a-z]{1,99}\\S\\.[a-z]{1,99}\\S+" ), this ) );
 }
 
 MainWindow::~MainWindow()
@@ -95,6 +102,7 @@ void MainWindow::on_pbajouter_clicked()
 
   if(test) // si cv QMessageBox::information
 {
+      ui->TVTRI->setModel(Ctmp.tridate_rdv());//Tri
 
       ui->TABCLI->setModel(Ctmp.afficher());
       Model_Completer=new QCompleter(this);
@@ -116,6 +124,8 @@ void MainWindow::on_pb_supp_clicked()
  bool test=Ctmp.supprimer(ccd);
  if(test)
  {
+     ui->TVTRI->setModel(Ctmp.tridate_rdv());//Tri
+
            ui->TABCLI->setModel(Ctmp.afficher());
            ui->comboBox_Supp->setModel(Ctmp.rechav());
           Model_Completer=new QCompleter(this);
@@ -144,7 +154,7 @@ void MainWindow::on_pbmodifier_clicked()
   bool test=C.modifier(ccd);
   if(test) // si cv QMessageBox::information
 {
-
+      ui->TVTRI->setModel(Ctmp.tridate_rdv());//Tri
       ui->TABCLI->setModel(Ctmp.afficher());
        ui->comboBox_modif->setModel(Ctmp.rechav());
       Model_Completer=new QCompleter(this);
@@ -223,7 +233,7 @@ void MainWindow::mailSent(QString status)
 void MainWindow::on_pb_mail_clicked()
 {
 
-      Smtp *smtp= new Smtp("mariem52bel@gmail.com","selenagomez","smtp.gmail.com");
+      Smtp *smtp= new Smtp("mariem52bel@gmail.com","Azertyuiop","smtp.gmail.com");
       connect(smtp, SIGNAL(status(QString)), this, SLOT(mailSent(QString)));
        if(ui->radioButton->isChecked())
        {

@@ -42,6 +42,7 @@ public:
      bool supprimer(int);
      bool modifier(int);
      QSqlQueryModel* rechav();
+     QSqlQueryModel*rechavmail();
      QSqlQueryModel *rechercher(int );
      QSqlQueryModel*recherchermail(QString);
      QSqlQueryModel*rechercherDate(QString);

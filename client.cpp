@@ -165,6 +165,12 @@ QSqlQueryModel* Client::rechav(){
     return model;
 }
 
+QSqlQueryModel* Client::rechavmail(){
+    QSqlQueryModel* model=new QSqlQueryModel();
+    model->setQuery("select Adresse_Mail from client");
+    return model;
+}
+
 QSqlQueryModel * Client::tridate_rdv(){
     QSqlQueryModel *model=new QSqlQueryModel();
     model->setQuery("select * from client order by Date_RDV ");
