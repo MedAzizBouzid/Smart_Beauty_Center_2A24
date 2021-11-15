@@ -3,13 +3,6 @@
 
 #include <QMainWindow>
 #include"service.h"
-#include<QTextEdit>
-#include<QtCharts>
-#include<QChartView>
-#include<QPrinter>
-#include<QPrintDialog>
-#include <QTime>
-#include<QSqlQuery>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -36,22 +29,8 @@ private slots:
 
     void on_search_pb_clicked();
 
-    void on_pushButton_clicked();
-
-    void on_pushButton_3_clicked();
-
-    void on_pb_print2_clicked();
-
-    void on_pushButton_2_clicked();
-
-    void on_table_search_activated(const QModelIndex &index);
-
-    void on_promo_pb_clicked();
-
 private:
     Ui::MainWindow *ui;
     Service S;
- QCompleter* Model_Completer;
- QSqlQuery qry;
 };
 #endif // MAINWINDOW_H

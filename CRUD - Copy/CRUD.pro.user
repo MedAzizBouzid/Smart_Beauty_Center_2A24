@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2021-11-15T09:05:24. -->
+<!-- Written by QtCreator 4.11.0, 2021-11-13T17:11:51. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -299,7 +299,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/hp_omen/Desktop/gestion de service/Smart_Beauty_Center_2A24-Gestion-des-Fournisseurs/CRUD/build-CRUD-Desktop_Qt_5_9_9_MinGW_32bit-Debug</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>

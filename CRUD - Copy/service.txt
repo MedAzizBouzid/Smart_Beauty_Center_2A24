@@ -1,0 +1,11 @@
+admin(Id,Nom,prenom)
+service(code,descreption,type,prix)
+
+statistique()map
+rendez_vous()void
+recherhcer(string)service
+
+ajouter(code,description,type,prix,#id)void
+suprimer(code,#id) void
+modifier(code,description,type,prix,#id)void
+recherhcer(#code)service

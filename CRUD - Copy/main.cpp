@@ -4,20 +4,7 @@
 
 #include <QApplication>
 #include<QtWidgets>
-#include <QtWidgets/QMainWindow>
-#include <QtCharts/QChartView>
-#include <QtCharts/QBarSeries>
-#include <QtCharts/QBarSet>
-#include <QtCharts/QLegend>
-#include <QtCharts/QBarCategoryAxis>
-#include <QtCharts/QHorizontalStackedBarSeries>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QLineSeries>
-#include <QtCharts/QCategoryAxis>
-#include <QtCharts/QPieSeries>
-#include <QtCharts/QPieSlice>
-#include <QTime>
-
+#include<QtCharts/QBarSeries>
 
 int main(int argc, char *argv[])
 {
@@ -35,12 +22,10 @@ int main(int argc, char *argv[])
 
 
 }
-    else{
+    else
         QMessageBox::critical(nullptr, QObject::tr("database is not open"),
                     QObject::tr("connection failed.\n"
-                                "Click Cancel to exit."), QMessageBox::Cancel);}
-
-
+                                "Click Cancel to exit."), QMessageBox::Cancel);
 
 
     return a.exec();
