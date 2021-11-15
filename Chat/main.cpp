@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
     ChatServer Server;
-    if(!Server.startServer(3333)){
+    if(!Server.startServer(1111)){
         qDebug()<<"Error:"<<Server.errorString();
         return 1;
 

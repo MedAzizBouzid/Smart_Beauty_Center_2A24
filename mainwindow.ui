@@ -26,6 +26,15 @@
       <height>1121</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="tabPosition">
      <enum>QTabWidget::North</enum>
     </property>
@@ -33,10 +42,10 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <property name="elideMode">
-     <enum>Qt::ElideMiddle</enum>
+     <enum>Qt::ElideNone</enum>
     </property>
     <property name="documentMode">
      <bool>false</bool>
@@ -60,25 +69,84 @@
      <property name="font">
       <font>
        <family>Showcard Gothic</family>
+       <pointsize>8</pointsize>
       </font>
      </property>
      <attribute name="title">
       <string>Ajouter un produit</string>
      </attribute>
      <widget class="QGroupBox" name="groupBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>90</y>
-        <width>493</width>
-        <height>641</height>
+        <x>350</x>
+        <y>190</y>
+        <width>431</width>
+        <height>621</height>
        </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Button">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>170</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
       </property>
       <property name="font">
        <font>
         <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
         <weight>50</weight>
+        <italic>false</italic>
         <bold>false</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>true</kerning>
        </font>
       </property>
       <property name="cursor">
@@ -87,11 +155,17 @@
       <property name="mouseTracking">
        <bool>false</bool>
       </property>
+      <property name="focusPolicy">
+       <enum>Qt::TabFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
       <property name="title">
        <string>Produit</string>
       </property>
       <property name="flat">
-       <bool>true</bool>
+       <bool>false</bool>
       </property>
       <property name="checkable">
        <bool>false</bool>
@@ -107,6 +181,19 @@
          <width>121</width>
          <height>16</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Showcard Gothic</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+         <stylestrategy>PreferDefault</stylestrategy>
+         <kerning>true</kerning>
+        </font>
        </property>
        <property name="text">
         <string>Nom du produit</string>
@@ -139,7 +226,7 @@
        <property name="geometry">
         <rect>
          <x>40</x>
-         <y>440</y>
+         <y>450</y>
          <width>56</width>
          <height>16</height>
         </rect>
@@ -161,8 +248,8 @@
       <widget class="QPushButton" name="pb_ajouter">
        <property name="geometry">
         <rect>
-         <x>272</x>
-         <y>540</y>
+         <x>270</x>
+         <y>530</y>
          <width>101</width>
          <height>28</height>
         </rect>
@@ -252,55 +339,56 @@
        </property>
       </widget>
      </widget>
-     <widget class="QLabel" name="background">
+     <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>-10</x>
         <y>0</y>
-        <width>1241</width>
-        <height>921</height>
+        <width>1101</width>
+        <height>931</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
       <property name="text">
-       <string>background</string>
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../6.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
-     <zorder>background</zorder>
+     <zorder>label_15</zorder>
      <zorder>groupBox</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
       <string>Modifier un produit</string>
      </attribute>
-     <widget class="QLabel" name="background_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1091</width>
-        <height>911</height>
-       </rect>
-      </property>
-      <property name="lineWidth">
-       <number>11</number>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>90</y>
-        <width>493</width>
-        <height>641</height>
+        <x>350</x>
+        <y>190</y>
+        <width>411</width>
+        <height>561</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
       </property>
       <property name="title">
        <string>Produit</string>
@@ -440,24 +528,32 @@
        </property>
       </widget>
      </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>-5</x>
+        <y>-5</y>
+        <width>1091</width>
+        <height>931</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../6.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_16</zorder>
+     <zorder>groupBox_2</zorder>
     </widget>
     <widget class="QWidget" name="ConsulterProduit">
      <attribute name="title">
       <string>Consulter Produit</string>
      </attribute>
-     <widget class="QLabel" name="background_3">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1571</width>
-        <height>911</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
      <widget class="QTableView" name="tab_afficher">
       <property name="geometry">
        <rect>
@@ -480,6 +576,7 @@
       <property name="font">
        <font>
         <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
        </font>
       </property>
       <property name="title">
@@ -604,37 +701,51 @@
        </rect>
       </property>
      </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>-25</x>
+        <y>-35</y>
+        <width>1131</width>
+        <height>1001</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../6.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_17</zorder>
+     <zorder>tab_afficher</zorder>
+     <zorder>groupBox_3</zorder>
+     <zorder>tab_rechercher</zorder>
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
       <string>Supprimer Produit</string>
      </attribute>
-     <widget class="QLabel" name="background_4">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>1571</width>
-        <height>901</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="groupBox_4">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>90</y>
+        <x>290</x>
+        <y>150</y>
         <width>493</width>
-        <height>641</height>
+        <height>391</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
        </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
       </property>
       <property name="title">
        <string>Produit</string>
@@ -653,16 +764,6 @@
        </property>
        <property name="text">
         <string>Supprimer</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="le_cabsupp">
-       <property name="geometry">
-        <rect>
-         <x>230</x>
-         <y>60</y>
-         <width>161</width>
-         <height>22</height>
-        </rect>
        </property>
       </widget>
       <widget class="QLabel" name="label_2">
@@ -689,6 +790,27 @@
        </property>
       </widget>
      </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>-25</x>
+        <y>-35</y>
+        <width>1121</width>
+        <height>991</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../6.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_18</zorder>
+     <zorder>groupBox_4</zorder>
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
@@ -708,7 +830,7 @@
       <property name="geometry">
        <rect>
         <x>700</x>
-        <y>190</y>
+        <y>200</y>
         <width>201</width>
         <height>28</height>
        </rect>
@@ -716,35 +838,18 @@
       <property name="font">
        <font>
         <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
        </font>
       </property>
       <property name="text">
        <string>Tri par nom</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_type">
-      <property name="geometry">
-       <rect>
-        <x>702</x>
-        <y>270</y>
-        <width>201</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Showcard Gothic</family>
-       </font>
-      </property>
-      <property name="text">
-       <string>Tri par type</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pb_quantite">
       <property name="geometry">
        <rect>
         <x>710</x>
-        <y>370</y>
+        <y>320</y>
         <width>191</width>
         <height>28</height>
        </rect>
@@ -752,6 +857,7 @@
       <property name="font">
        <font>
         <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
        </font>
       </property>
       <property name="text">
@@ -770,34 +876,35 @@
       <property name="font">
        <font>
         <family>Showcard Gothic</family>
+        <pointsize>8</pointsize>
        </font>
       </property>
       <property name="text">
        <string>Tri par prix</string>
       </property>
      </widget>
-     <widget class="QLabel" name="background_5">
+     <widget class="QLabel" name="background">
       <property name="geometry">
        <rect>
-        <x>15</x>
-        <y>15</y>
-        <width>1061</width>
-        <height>901</height>
+        <x>-10</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>931</height>
        </rect>
       </property>
-      <property name="font">
-       <font>
-        <family>Showcard Gothic</family>
-       </font>
-      </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../5.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
-     <zorder>background_5</zorder>
+     <zorder>background</zorder>
      <zorder>tab_trie</zorder>
      <zorder>pb_trinom</zorder>
-     <zorder>pb_type</zorder>
      <zorder>pb_quantite</zorder>
      <zorder>pb_prix</zorder>
     </widget>
