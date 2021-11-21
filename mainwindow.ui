@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>ZESTY</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/zesty.png</normaloff>:/zesty.png</iconset>
+  </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
@@ -42,7 +46,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -375,8 +379,8 @@
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>190</y>
+        <x>360</x>
+        <y>220</y>
         <width>411</width>
         <height>561</height>
        </rect>
@@ -438,8 +442,8 @@
       <widget class="QPushButton" name="pb_modifier">
        <property name="geometry">
         <rect>
-         <x>190</x>
-         <y>430</y>
+         <x>220</x>
+         <y>490</y>
          <width>93</width>
          <height>28</height>
         </rect>
@@ -557,10 +561,10 @@
      <widget class="QTableView" name="tab_afficher">
       <property name="geometry">
        <rect>
-        <x>5</x>
-        <y>11</y>
-        <width>621</width>
-        <height>651</height>
+        <x>20</x>
+        <y>200</y>
+        <width>1051</width>
+        <height>271</height>
        </rect>
       </property>
      </widget>
@@ -720,10 +724,80 @@
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QPushButton" name="pb_imprimer">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>87</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Imprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PDF">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>87</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PDF</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_Qrcode">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>80</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>QrCode</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_code">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>50</y>
+        <width>101</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>40</y>
+        <width>121</width>
+        <height>101</height>
+       </rect>
+      </property>
+     </widget>
      <zorder>label_17</zorder>
      <zorder>tab_afficher</zorder>
      <zorder>groupBox_3</zorder>
      <zorder>tab_rechercher</zorder>
+     <zorder>pb_imprimer</zorder>
+     <zorder>PDF</zorder>
+     <zorder>pb_Qrcode</zorder>
+     <zorder>tableView</zorder>
+     <zorder>label_code</zorder>
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -814,7 +888,7 @@
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
-      <string>Tri par nom</string>
+      <string>Tri </string>
      </attribute>
      <widget class="QTableView" name="tab_trie">
       <property name="geometry">
@@ -940,6 +1014,8 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

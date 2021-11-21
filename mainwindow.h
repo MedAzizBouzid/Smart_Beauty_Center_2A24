@@ -5,10 +5,13 @@
 #include"produit.h"
 #include <QDirModel>
 #include <QCompleter>
+#include<QSystemTrayIcon>
+#include "qrcode.h"
+
 namespace Ui {
 class MainWindow;
 }
-
+class QSystemTrayIcon;
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -29,7 +32,7 @@ private slots:
 
     void on_pb_trinom_clicked();
 
-    void on_pushButton_clicked();
+    void on_pb_imprimer_clicked();
 
     void on_pb_type_clicked();
 
@@ -41,12 +44,21 @@ private slots:
 
     void on_pb_recherchertype_clicked();
 
+    void on_notifierpb_clicked();
+
+    void on_PDF_clicked();
+
+    void on_pb_Qrcode_clicked();
+
+
+
 private:
     Ui::MainWindow *ui;
     Produit Pro;
     QCompleter* Model_Completer;
       QCompleter* Model_Completer1;
        QCompleter* Model_Completer2;
+       QSystemTrayIcon *mSystemTrayIcon;
 };
 
 
