@@ -31,7 +31,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -939,9 +939,9 @@ selection-color: rgb(241, 213, 255);
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>240</y>
-        <width>681</width>
-        <height>351</height>
+        <y>30</y>
+        <width>561</width>
+        <height>541</height>
        </rect>
       </property>
       <property name="font">
@@ -959,10 +959,10 @@ selection-color: rgb(255, 203, 129);</string>
      <widget class="QCalendarWidget" name="calendarWidget">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>10</y>
-        <width>571</width>
-        <height>211</height>
+        <x>580</x>
+        <y>30</y>
+        <width>541</width>
+        <height>221</height>
        </rect>
       </property>
      </widget>
@@ -979,9 +979,20 @@ selection-color: rgb(255, 203, 129);</string>
        <string/>
       </property>
      </widget>
+     <widget class="QTableView" name="tvrdv">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>260</y>
+        <width>541</width>
+        <height>311</height>
+       </rect>
+      </property>
+     </widget>
      <zorder>backgroundrdv</zorder>
      <zorder>TVTRI</zorder>
      <zorder>calendarWidget</zorder>
+     <zorder>tvrdv</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
      <attribute name="title">
@@ -1246,6 +1257,16 @@ selection-color: rgb(255, 203, 129);</string>
       </property>
      </widget>
     </widget>
+   </widget>
+   <widget class="QDateEdit" name="currentdate">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>630</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
    </widget>
   </widget>
  </widget>

@@ -5,6 +5,9 @@
 #include <QIntValidator>
 #include <QComboBox>
 #include "smtp.h"
+#include <QCalendarWidget>
+#include <QDateEdit>
+#include <QDate>
 
 
 #define NOM_RX "^([a-z]+[ ]?|[a-z])+$"
@@ -25,6 +28,10 @@ MainWindow::MainWindow(QWidget *parent) :
     QString Adresse_Mail=ui->codemail->text();
     QSqlQueryModel* model=Ctmp.recherchermail(Adresse_Mail);
    ui->tvmail->setModel(model);
+
+ //  QString Date=ui->calendarWidget->selectedDate().toString();
+   //    QSqlQueryModel* modelm=Ctmp.rechercherDate(Date);
+  // ui->tvrdv->setModel(modelm);
 
     QPixmap pix("C:/Users/Asus-PC/Desktop/background.png");
     ui->backgroundajouter_2->setPixmap(pix);
@@ -244,5 +251,21 @@ void MainWindow::on_pb_mail_clicked()
            smtp->sendMail("",ui->codemail->text(),"Offres","Annonce Offres !\nProfitez de nos offres jusqu'à -50% solde!\n Contactez nous pour en savoir plus.\n");
           }
      void mailSent(QString)  ;
+
+}
+
+void MainWindow::on_calendarWidget_clicked(const QDate &Date_RDV)
+{
+
+    ui->currentdate = new QDateEdit;
+        ui->currentdate->setDisplayFormat("dd/MM/yyyy");
+        ui->currentdate->setDate(Date_RDV);
+        QString Date(ui->currentdate->text());
+   //QString Date=ui->currentdate->toString();
+    QSqlQueryModel* model=Ctmp.rechercherDate(Date);
+    if (model != nullptr)
+    {
+       ui->tvrdv->setModel(model);
+    }
 
 }

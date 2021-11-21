@@ -40,6 +40,8 @@ private slots:
         void mailSent(QString);
 
 
+        void on_calendarWidget_clicked(const QDate &date);
+
 private:
     Ui::MainWindow *ui;
     Client Ctmp;
