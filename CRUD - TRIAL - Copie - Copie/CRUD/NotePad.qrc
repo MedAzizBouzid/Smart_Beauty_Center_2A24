@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Notepad/about.png</file>
+        <file>Notepad/copy.png</file>
+        <file>Notepad/cut.png</file>
+        <file>Notepad/new.png</file>
+        <file>Notepad/open.jpg</file>
+        <file>Notepad/open.png</file>
+        <file>Notepad/paste.png</file>
+        <file>Notepad/redo.png</file>
+        <file>Notepad/save as.png</file>
+        <file>Notepad/save.jpg</file>
+        <file>Notepad/undo.png</file>
+        <file>Notepad/ouvriiir.jpg</file>
+    </qresource>
+</RCC>
