@@ -48,6 +48,8 @@ private slots:
 
     void on_promo_pb_clicked();
 
+    void on_pb_stat_clicked();
+
 private:
     Ui::MainWindow *ui;
     Service S;
