@@ -46,7 +46,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -249,7 +249,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_ajouter">
+      <widget class="QPushButton" name="pb_ajouterbouzid">
        <property name="geometry">
         <rect>
          <x>270</x>
@@ -439,7 +439,7 @@
         <string>Prix</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_modifier">
+      <widget class="QPushButton" name="pb_modifierbouzid">
        <property name="geometry">
         <rect>
          <x>220</x>
@@ -609,7 +609,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_rechercher">
+      <widget class="QPushButton" name="pb_rechercherbouzid">
        <property name="geometry">
         <rect>
          <x>300</x>
@@ -668,7 +668,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_recherchernom">
+      <widget class="QPushButton" name="pb_recherchernombouzid">
        <property name="geometry">
         <rect>
          <x>310</x>
@@ -681,7 +681,7 @@
         <string>REcherche Nom</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pb_recherchertype">
+      <widget class="QPushButton" name="pb_recherchertypebouzid">
        <property name="geometry">
         <rect>
          <x>310</x>
@@ -714,6 +714,11 @@
         <height>1001</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string/>
       </property>
@@ -724,7 +729,7 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_imprimer">
+     <widget class="QPushButton" name="pb_imprimerbouzid">
       <property name="geometry">
        <rect>
         <x>230</x>
@@ -737,7 +742,7 @@
        <string>Imprimer</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="PDF">
+     <widget class="QPushButton" name="PDFbouzid">
       <property name="geometry">
        <rect>
         <x>450</x>
@@ -750,7 +755,7 @@
        <string>PDF</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_Qrcode">
+     <widget class="QPushButton" name="pb_Qrcodebouzid">
       <property name="geometry">
        <rect>
         <x>670</x>
@@ -789,15 +794,63 @@
        </rect>
       </property>
      </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>530</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Showcard Gothic</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>CAPTEUR</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="RB_ON">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>530</y>
+        <width>97</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ON</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="RB_OFF">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>530</y>
+        <width>97</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OFF</string>
+      </property>
+     </widget>
      <zorder>label_17</zorder>
      <zorder>tab_afficher</zorder>
      <zorder>groupBox_3</zorder>
      <zorder>tab_rechercher</zorder>
-     <zorder>pb_imprimer</zorder>
-     <zorder>PDF</zorder>
-     <zorder>pb_Qrcode</zorder>
+     <zorder>pb_imprimerbouzid</zorder>
+     <zorder>PDFbouzid</zorder>
+     <zorder>pb_Qrcodebouzid</zorder>
      <zorder>tableView</zorder>
      <zorder>label_code</zorder>
+     <zorder>label_19</zorder>
+     <zorder>RB_ON</zorder>
+     <zorder>RB_OFF</zorder>
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -827,7 +880,7 @@
       <property name="flat">
        <bool>true</bool>
       </property>
-      <widget class="QPushButton" name="pb_supprimer">
+      <widget class="QPushButton" name="pb_supprimerbouzid">
        <property name="geometry">
         <rect>
          <x>160</x>
@@ -900,7 +953,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_trinom">
+     <widget class="QPushButton" name="pb_trinombouzid">
       <property name="geometry">
        <rect>
         <x>700</x>
@@ -919,7 +972,7 @@
        <string>Tri par nom</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_quantite">
+     <widget class="QPushButton" name="pb_quantitebouzid">
       <property name="geometry">
        <rect>
         <x>710</x>
@@ -938,7 +991,7 @@
        <string>Tri par quantite</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_prix">
+     <widget class="QPushButton" name="pb_prixbouzid">
       <property name="geometry">
        <rect>
         <x>720</x>
@@ -978,9 +1031,9 @@
      </widget>
      <zorder>background</zorder>
      <zorder>tab_trie</zorder>
-     <zorder>pb_trinom</zorder>
-     <zorder>pb_quantite</zorder>
-     <zorder>pb_prix</zorder>
+     <zorder>pb_trinombouzid</zorder>
+     <zorder>pb_quantitebouzid</zorder>
+     <zorder>pb_prixbouzid</zorder>
     </widget>
    </widget>
   </widget>

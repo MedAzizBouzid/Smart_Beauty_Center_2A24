@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "arduino.h"
 #include <QMainWindow>
 #include"produit.h"
 #include <QDirModel>
@@ -21,36 +21,42 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pb_ajouter_clicked();
+    void on_pb_ajouterbouzid_clicked();
+
+    void on_pb_supprimerbouzid_clicked();
+
+
+    void on_pb_modifierbouzid_clicked();
+
+    void on_pb_rechercherbouzid_clicked();
+
+    void on_pb_trinombouzid_clicked();
+
+    void on_pb_imprimerbouzid_clicked();
+
+    void on_pb_typebouzid_clicked();
+
+    void on_pb_quantitebouzid_clicked();
+
+    void on_pb_prixbouzid_clicked();
+
+    void on_pb_recherchernombouzid_clicked();
+
+    void on_pb_recherchertypebouzid_clicked();
+
+    void on_notifierpbbouzid_clicked();
+
+    void on_PDFbouzid_clicked();
+
+    void on_pb_Qrcodebouzid_clicked();
+
+
+
+    void on_RB_ONbouzid_clicked();
+
+    void on_RB_OFFbouzid_clicked();
 
     void on_pb_supprimer_clicked();
-
-
-    void on_pb_modifier_clicked();
-
-    void on_pb_rechercher_clicked();
-
-    void on_pb_trinom_clicked();
-
-    void on_pb_imprimer_clicked();
-
-    void on_pb_type_clicked();
-
-    void on_pb_quantite_clicked();
-
-    void on_pb_prix_clicked();
-
-    void on_pb_recherchernom_clicked();
-
-    void on_pb_recherchertype_clicked();
-
-    void on_notifierpb_clicked();
-
-    void on_PDF_clicked();
-
-    void on_pb_Qrcode_clicked();
-
-
 
 private:
     Ui::MainWindow *ui;
@@ -59,6 +65,7 @@ private:
       QCompleter* Model_Completer1;
        QCompleter* Model_Completer2;
        QSystemTrayIcon *mSystemTrayIcon;
+       Arduino A;
 };
 
 

@@ -27,6 +27,8 @@
 #include <QtSvg/QSvgRenderer>
 using qrcodegen::QrCode;
 //*********************************************************
+#include"arduino.h"
+//*****************************************************
 #define NOM_RX "^([a-z]+[A-Z]+[ ]?|[a-z]+[A-Z])+$"
 #define NUM_RX "^([0-9]+[,.]?)+$"
       QRegExp rxNom(NOM_RX);
@@ -112,7 +114,7 @@ MainWindow::~MainWindow()
 
 //CRUD
 
-            void MainWindow::on_pb_ajouter_clicked()
+            void MainWindow::on_pb_ajouterbouzid_clicked()
             {
                 QString NomProduit=ui->le_nom->text();
                 float Prix=ui->le_prix->text().toFloat();
@@ -157,7 +159,7 @@ MainWindow::~MainWindow()
             ui->tab_afficher->setModel(P.afficher());}
             }
 
-                            void MainWindow::on_pb_supprimer_clicked()
+                            void MainWindow::on_pb_supprimerbouzid_clicked()
                             {
                                 Produit P1;
                                 P1.setCodeABar(ui->comobox_supprimer->currentText().toInt());
@@ -179,7 +181,7 @@ MainWindow::~MainWindow()
                             }
 
 
-void MainWindow::on_pb_modifier_clicked()
+void MainWindow::on_pb_modifierbouzid_clicked()
 {
 QString NomProduitn=ui->le_nommodifier->text();
 float Prixn=ui->le_quantitemodifier->text().toInt();
@@ -243,7 +245,7 @@ else {
 
 // RECHERCHER
 
-            void MainWindow::on_pb_rechercher_clicked()
+            void MainWindow::on_pb_rechercherbouzid_clicked()
             {
 
             int cab=ui->le_cabrechercher->text().toInt();
@@ -260,7 +262,7 @@ else {
 
             }
 
-                        void MainWindow::on_pb_recherchernom_clicked()
+                        void MainWindow::on_pb_recherchernombouzid_clicked()
                         {
                             QString nom=ui->le_nomrechercher->text();
 
@@ -274,7 +276,7 @@ else {
                                                          }
 
                         }
-                                            void MainWindow::on_pb_recherchertype_clicked()
+                                            void MainWindow::on_pb_recherchertypebouzid_clicked()
                                             {
                                                 QString type=ui->le_typerechercher->text();
 
@@ -299,7 +301,7 @@ else {
 
 
    //TRI
-void MainWindow::on_pb_trinom_clicked()
+void MainWindow::on_pb_trinombouzid_clicked()
 {
     QSqlQueryModel* model=Pro.trienom( );
     if(model !=nullptr)
@@ -308,21 +310,21 @@ void MainWindow::on_pb_trinom_clicked()
 
 
 
-                void MainWindow::on_pb_type_clicked()
+                void MainWindow::on_pb_typebouzid_clicked()
                 {
                     QSqlQueryModel* model=Pro.trietype( );
                     if(model !=nullptr)
                          ui->tab_trie->setModel(model);
                 }
 
-                                    void MainWindow::on_pb_quantite_clicked()
+                                    void MainWindow::on_pb_quantitebouzid_clicked()
                                     {
                                         QSqlQueryModel* model=Pro.triequantite( );
                                         if(model !=nullptr)
                                              ui->tab_trie->setModel(model);
                                     }
 
-                                                            void MainWindow::on_pb_prix_clicked()
+                                                            void MainWindow::on_pb_prixbouzid_clicked()
                                                             {
                                                                 QSqlQueryModel* model=Pro.trieprix( );
                                                                 if(model !=nullptr)
@@ -334,13 +336,13 @@ void MainWindow::on_pb_trinom_clicked()
 
 
 
-void MainWindow::on_notifierpb_clicked()
+void MainWindow::on_notifierpbbouzid_clicked()
 {
     mSystemTrayIcon->showMessage(tr("Message"),tr("Attention stock va etre epuisé"));
 
 }
 
-void MainWindow::on_pb_imprimer_clicked()
+void MainWindow::on_pb_imprimerbouzid_clicked()
 {
     QSqlDatabase db;
                     QTableView table_produit;
@@ -422,7 +424,7 @@ void MainWindow::on_pb_imprimer_clicked()
                      delete document;
 }
 
-void MainWindow::on_PDF_clicked()
+void MainWindow::on_PDFbouzid_clicked()
 {
     QString strStream;
                                  QTextStream out(&strStream);
@@ -476,7 +478,7 @@ void MainWindow::on_PDF_clicked()
                                           doc.print(&printer);
 }
 
-void MainWindow::on_pb_Qrcode_clicked()
+void MainWindow::on_pb_Qrcodebouzid_clicked()
 {
     if(ui->tab_afficher->currentIndex().row()==-1)
                QMessageBox::information(nullptr, QObject::tr("QrCode"),
@@ -497,5 +499,35 @@ void MainWindow::on_pb_Qrcode_clicked()
                 ui->label_code->setPixmap(pix);
            }
 }
+
+
+//*****************************ARDUINO******************************//
+/*
+void MainWindow::on_RB_ON_clicked()
+{      int ret=A.connect_arduino(); // lancer la connexion à arduino
+       switch(ret){
+       case(0):qDebug()<< "arduino is available and connected to : "<< A.getarduino_port_name();
+           break;
+       case(1):qDebug() << "arduino is available but not connected to :" <<A.getarduino_port_name();
+          break;
+       case(-1):qDebug() << "arduino is not available";
+       }
+        QObject::connect(A.getserial(),SIGNAL(readyRead()),this,SLOT(update_label()));
+    A.setdata(A.read_from_arduino()) ;
+        if(A.getdata()=="1")
+
+        mSystemTrayIcon->showMessage(tr("Message"),tr("Le stock de prouit GEL est epuisé veuillez contactez le fournisseur"));
+
+
+
+}
+
+void MainWindow::on_RB_OFF_clicked()
+{
+    int ret=A.close_arduino();
+    if(ret==0)
+        qDebug()<<"arduino is closed";
+}
+*/
 
 

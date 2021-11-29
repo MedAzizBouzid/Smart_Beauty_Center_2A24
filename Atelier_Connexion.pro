@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui serialport
 QT       += sql
 QT += svg
 
@@ -26,6 +26,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 SOURCES += \
+    arduino.cpp \
         main.cpp \
         mainwindow.cpp \
     connection.cpp \
@@ -33,6 +34,7 @@ SOURCES += \
     qrcode.cpp
 
 HEADERS += \
+    arduino.h \
         mainwindow.h \
     connection.h \
     produit.h \
