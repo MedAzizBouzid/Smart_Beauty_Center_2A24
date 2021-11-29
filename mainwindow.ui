@@ -32,7 +32,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -106,7 +106,7 @@
         <string/>
        </property>
       </widget>
-      <widget class="QPushButton" name="B_Ajout">
+      <widget class="QPushButton" name="B_AjoutEmploye">
        <property name="geometry">
         <rect>
          <x>350</x>
@@ -296,7 +296,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="pushButtonEmploye">
       <property name="geometry">
        <rect>
         <x>750</x>
@@ -309,7 +309,7 @@
        <string>Recherche</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="Tri_nom">
+     <widget class="QPushButton" name="Tri_nomEmploye">
       <property name="geometry">
        <rect>
         <x>890</x>
@@ -322,7 +322,7 @@
        <string>Tri</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="PDF">
+     <widget class="QPushButton" name="PDFEmploye">
       <property name="geometry">
        <rect>
         <x>750</x>
@@ -395,7 +395,7 @@
         <string>CIN</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="B_Modifier">
+      <widget class="QPushButton" name="B_ModifierEmploye">
        <property name="geometry">
         <rect>
          <x>350</x>
@@ -587,7 +587,7 @@
         <string>CIN</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="B_delete">
+      <widget class="QPushButton" name="B_deleteEmploye">
        <property name="geometry">
         <rect>
          <x>350</x>

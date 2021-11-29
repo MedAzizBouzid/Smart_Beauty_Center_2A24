@@ -42,7 +42,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_B_Ajout_clicked()
+void MainWindow::on_B_AjoutEmploye_clicked()
 {
    int id=ui->le_id->text().toInt();
    int telephone=ui->le_telephone->text().toInt();
@@ -73,7 +73,7 @@ Employe E(id,telephone,H_travail,nom,prenom,adresse,role);
 }
 
 
-void MainWindow::on_B_delete_clicked()
+void MainWindow::on_B_deleteEmploye_clicked()
 {
    int id = ui->comboBox_2->currentText().toInt();
    bool test=Etmp.supprimer(id);
@@ -97,7 +97,7 @@ void MainWindow::on_B_delete_clicked()
 
 }
 
-void MainWindow::on_B_Modifier_clicked()
+void MainWindow::on_B_ModifierEmploye_clicked()
 {
     int id = ui->comboBox->currentText().toInt();
         QString nom= ui->Mod_Nom->text();
@@ -127,7 +127,7 @@ Employe E(id,telephone,0,nom,prenom,adresse,role);
                                   "Click Cancel to exit."), QMessageBox::Cancel);
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButtonEmploye_clicked()
 {
     QSqlQueryModel* model;
     QString tri=ui->comboBox_tri->currentText();
@@ -144,7 +144,7 @@ if(tri=="Role")
  }
 }
 
-void MainWindow::on_Tri_nom_clicked()
+void MainWindow::on_Tri_nomEmploye_clicked()
 {
      QString tri=ui->comboBox_tri->currentText();
      if(tri=="Nom")
@@ -165,7 +165,7 @@ void MainWindow::on_Tri_nom_clicked()
 
 }
 
-void MainWindow::on_PDF_clicked()
+void MainWindow::on_PDFEmploye_clicked()
 {
     QSqlDatabase db;
                 QTableView table_produit;

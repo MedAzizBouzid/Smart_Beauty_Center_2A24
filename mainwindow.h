@@ -25,19 +25,19 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_B_Ajout_clicked();
+    void on_B_AjoutEmploye_clicked();
 
-    void on_B_delete_clicked();
+    void on_B_deleteEmploye_clicked();
 
-    void on_tableView_activated(const QModelIndex &index);
+    void on_tableViewEmploye_activated(const QModelIndex &index);
 
-    void on_B_Modifier_clicked();
+    void on_B_ModifierEmploye_clicked();
 
-    void on_pushButton_clicked();
+    void on_pushButtonEmploye_clicked();
 
-    void on_Tri_nom_clicked();
+    void on_Tri_nomEmploye_clicked();
 
-    void on_PDF_clicked();
+    void on_PDFEmploye_clicked();
 
 private:
     Ui::MainWindow *ui;
