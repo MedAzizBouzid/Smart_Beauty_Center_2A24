@@ -23,24 +23,24 @@ public:
 
 
 private slots:
-        void on_pbajouter_clicked();
-    void on_pb_supp_clicked();
-    void on_pbmodifier_clicked();
+        void on_pbajoutermariem_clicked();
+    void on_pb_suppmariem_clicked();
+    void on_pbmodifiermariem_clicked();
 
 
-    void on_pbrechercher_clicked();
+    void on_pbrecherchermariem_clicked();
 
 
-    void on_codemail_returnPressed();
+    void on_codemailmariem_returnPressed();
 
 
-    void on_pb_mail_clicked();
+    void on_pb_mailmariem_clicked();
 
     void sendMail();
         void mailSent(QString);
 
 
-        void on_calendarWidget_clicked(const QDate &date);
+        void on_calendarWidgetmariem_clicked(const QDate &date);
 
 private:
     Ui::MainWindow *ui;

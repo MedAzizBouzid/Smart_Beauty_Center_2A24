@@ -31,6 +31,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+    arduino.cpp \
     client.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -40,6 +41,7 @@ SOURCES += \
 HEADERS += \
     ../../Downloads/smtp (1).h \
     ../../Downloads/smtp (1).h \
+    arduino.h \
     client.h \
         mainwindow.h \
     connection.h \

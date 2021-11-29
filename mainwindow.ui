@@ -31,7 +31,7 @@
      </font>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab1">
      <attribute name="title">
@@ -58,7 +58,7 @@
        <string>Retour</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pbajouter">
+     <widget class="QPushButton" name="pbajoutermariem">
       <property name="geometry">
        <rect>
         <x>140</x>
@@ -338,7 +338,7 @@
      </widget>
      <zorder>backgroundajouter_2</zorder>
      <zorder>pbretour</zorder>
-     <zorder>pbajouter</zorder>
+     <zorder>pbajoutermariem</zorder>
      <zorder>lecode</zorder>
      <zorder>lenom</zorder>
      <zorder>leprenom</zorder>
@@ -450,7 +450,7 @@ selection-color: rgb(241, 213, 255);
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pbmodifier">
+     <widget class="QPushButton" name="pbmodifiermariem">
       <property name="geometry">
        <rect>
         <x>140</x>
@@ -684,7 +684,7 @@ selection-color: rgb(241, 213, 255);
      <zorder>prenommodif</zorder>
      <zorder>adressemodif</zorder>
      <zorder>datemodif</zorder>
-     <zorder>pbmodifier</zorder>
+     <zorder>pbmodifiermariem</zorder>
      <zorder>pushButton_3</zorder>
      <zorder>comboBox_2</zorder>
      <zorder>label_10</zorder>
@@ -734,7 +734,7 @@ selection-color: rgb(241, 213, 255);
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_supp">
+     <widget class="QPushButton" name="pb_suppmariem">
       <property name="geometry">
        <rect>
         <x>270</x>
@@ -767,7 +767,7 @@ selection-color: rgb(241, 213, 255);
      </widget>
      <zorder>backgroundsupprimer</zorder>
      <zorder>label_8</zorder>
-     <zorder>pb_supp</zorder>
+     <zorder>pb_suppmariem</zorder>
      <zorder>comboBox_Supp</zorder>
     </widget>
     <widget class="QWidget" name="tab_9">
@@ -805,7 +805,7 @@ selection-color: rgb(241, 213, 255);
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pbrechercher">
+     <widget class="QPushButton" name="pbrecherchermariem">
       <property name="geometry">
        <rect>
         <x>470</x>
@@ -925,7 +925,7 @@ selection-color: rgb(241, 213, 255);
      <zorder>tabrech</zorder>
      <zorder>label</zorder>
      <zorder>coderech</zorder>
-     <zorder>pbrechercher</zorder>
+     <zorder>pbrecherchermariem</zorder>
      <zorder>label_14</zorder>
      <zorder>daterech</zorder>
      <zorder>label_15</zorder>
@@ -956,7 +956,7 @@ selection-color: rgb(241, 213, 255);
 selection-color: rgb(255, 203, 129);</string>
       </property>
      </widget>
-     <widget class="QCalendarWidget" name="calendarWidget">
+     <widget class="QCalendarWidget" name="calendarWidgetmariem">
       <property name="geometry">
        <rect>
         <x>580</x>
@@ -991,7 +991,7 @@ selection-color: rgb(255, 203, 129);</string>
      </widget>
      <zorder>backgroundrdv</zorder>
      <zorder>TVTRI</zorder>
-     <zorder>calendarWidget</zorder>
+     <zorder>calendarWidgetmariem</zorder>
      <zorder>tvrdv</zorder>
     </widget>
     <widget class="QWidget" name="tab_2">
@@ -1096,7 +1096,7 @@ selection-color: rgb(255, 203, 129);</string>
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="pb_mail">
+     <widget class="QPushButton" name="pb_mailmariem">
       <property name="geometry">
        <rect>
         <x>480</x>
@@ -1123,7 +1123,7 @@ selection-color: rgb(255, 203, 129);</string>
      <zorder>groupBox</zorder>
      <zorder>label_17</zorder>
      <zorder>codemail</zorder>
-     <zorder>pb_mail</zorder>
+     <zorder>pb_mailmariem</zorder>
      <zorder>tvmail</zorder>
     </widget>
     <widget class="QWidget" name="tab">

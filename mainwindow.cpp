@@ -94,7 +94,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pbajouter_clicked()
+void MainWindow::on_pbajoutermariem_clicked()
 {
     //recuperer les infos saisies dans les champs
     int code_C=ui->lecode->text().toInt();
@@ -124,7 +124,7 @@ else // si cvpas QMessageBox::critical
 
 }
 
-void MainWindow::on_pb_supp_clicked()
+void MainWindow::on_pb_suppmariem_clicked()
 {
 
     int ccd=ui->comboBox_modif->currentText().toInt();
@@ -148,7 +148,7 @@ void MainWindow::on_pb_supp_clicked()
 }
 
 
-void MainWindow::on_pbmodifier_clicked()
+void MainWindow::on_pbmodifiermariem_clicked()
 {
     int ccd=ui->comboBox_modif->currentText().toInt();
     QString Num_tel=ui->numtelmodif->text();
@@ -183,7 +183,7 @@ else // si cvpas QMessageBox::critical
 
 
 
-void MainWindow::on_pbrechercher_clicked()
+void MainWindow::on_pbrecherchermariem_clicked()
 {
     int code_C=ui->coderech->text().toInt();
     QString Date_RDV=ui->daterech->text();
@@ -204,7 +204,7 @@ void MainWindow::on_pbrechercher_clicked()
 
 
 
-void MainWindow::on_codemail_returnPressed()
+void MainWindow::on_codemailmariem_returnPressed()
 {
     QString Adresse_Mail=ui->codemail->text();
 
@@ -237,7 +237,7 @@ void MainWindow::mailSent(QString status)
         QMessageBox::warning( 0, tr( "Qt Simple SMTP client" ), tr( "Message sent!\n\n" ) );
 }
 
-void MainWindow::on_pb_mail_clicked()
+void MainWindow::on_pb_mailmariem_clicked()
 {
 
       Smtp *smtp= new Smtp("mariem52bel@gmail.com","Azertyuiop","smtp.gmail.com");
@@ -254,7 +254,7 @@ void MainWindow::on_pb_mail_clicked()
 
 }
 
-void MainWindow::on_calendarWidget_clicked(const QDate &Date_RDV)
+void MainWindow::on_calendarWidgetmariem_clicked(const QDate &Date_RDV)
 {
 
     ui->currentdate = new QDateEdit;
