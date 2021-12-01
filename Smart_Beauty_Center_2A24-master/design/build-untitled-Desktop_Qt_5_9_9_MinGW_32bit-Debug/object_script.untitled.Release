@@ -1,0 +1,14 @@
+INPUT(
+./release\connexion.o
+./release\dialog.o
+./release\fournisseur.o
+./release\main.o
+./release\mainwindow.o
+./release\notepad.o
+./release\produit.o
+./release\qrcode.o
+./release\qrc_photos.o
+./release\moc_dialog.o
+./release\moc_mainwindow.o
+./release\moc_notepad.o
+);
