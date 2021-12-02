@@ -1,0 +1,5633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1770</width>
+    <height>1500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ZESTY</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="photos.qrc">
+    <normaloff>:/243530218_1310825109377240_1931357582866907769_n.ico</normaloff>:/243530218_1310825109377240_1931357582866907769_n.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+backgroung-color: rgb(34,36,44);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>311</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(74, 74, 74);</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="Acceuil">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 2px solid rgb(37,39,48);
+color:#FFF;
+	font: 10pt &quot;Nirmala UI&quot;;
+background-color: rgb(69, 65, 85);
+}
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Acceuil</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/home.png</normaloff>:/home.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Produits">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 2px solid rgb(37,39,48);
+color:#FFF;
+	font: 10pt &quot;Nirmala UI&quot;;
+
+background-color: rgb(69, 65, 85);
+}
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Produits</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/product.png</normaloff>:/product.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Services">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 2px solid rgb(37,39,48);
+color:#FFF;
+	font: 10pt &quot;Nirmala UI&quot;;
+
+background-color: rgb(69, 65, 85);
+}
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Services</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/service.png</normaloff>:/service.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Employes">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 2px solid rgb(37,39,48);
+color:#FFF;
+	font: 10pt &quot;Nirmala UI&quot;;
+
+background-color: rgb(69, 65, 85);
+}
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Employes</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/client.png</normaloff>:/client.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Client">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 2px solid rgb(37,39,48);
+color:#FFF;
+	font: 10pt &quot;Nirmala UI&quot;;
+
+background-color: rgb(69, 65, 85);
+}
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Clients</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/cliennnt.png</normaloff>:/cliennnt.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Fournisseurs">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 2px solid rgb(37,39,48);
+color:#FFF;
+	font: 10pt &quot;Nirmala UI&quot;;
+
+background-color: rgb(69, 65, 85);
+}
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Fournisseurs</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/product.png</normaloff>:/product.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Comptabilite">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 2px solid rgb(37,39,48);
+color:#FFF;
+	font: 10pt &quot;Nirmala UI&quot;;
+
+background-color: rgb(69, 65, 85);
+}
+QPushButton:hover{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>Comptabilite</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/comptaaa.png</normaloff>:/comptaaa.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>1181</width>
+      <height>1481</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="Page_Fournisseur">
+     <widget class="QTabWidget" name="tabWidget_fournisseur">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1191</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="ajout">
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <attribute name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/pluus.png</normaloff>:/pluus.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Ajouter</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Ajout d&quot;un fournisseur</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>50</y>
+          <width>801</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="photos.qrc">:/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_7">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>361</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <widget class="QLabel" name="code_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>40</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Code_F :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_Code_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>40</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_29">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>190</y>
+           <width>51</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Type: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_Type_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>190</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_30">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>120</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Numero de telephone: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_Num_fourniseur">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>120</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_31">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>270</y>
+           <width>101</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Localisation: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_Localisation_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>270</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_32">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>350</y>
+           <width>41</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Prix: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_Prix_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>350</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Ajouter_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>420</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ajouter</string>
+         </property>
+         <property name="icon">
+          <iconset resource="photos.qrc">
+           <normaloff>:/pluus.png</normaloff>:/pluus.png</iconset>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="modif">
+       <attribute name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/modiiiif.png</normaloff>:/modiiiif.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Modifier</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Modifier fournisseur</string>
+       </attribute>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>10</y>
+          <width>751</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="photos.qrc">:/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Valide_Modif_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>450</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Modifier</string>
+        </property>
+        <property name="icon">
+         <iconset resource="photos.qrc">
+          <normaloff>:/modiiiif.png</normaloff>:/modiiiif.png</iconset>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>391</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>130</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Donner nouveau Code_F :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>211</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Donner Code_F a modifier:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>210</y>
+           <width>211</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Donner nouveau Numero :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_37">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>280</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Donner nouveau Type :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_38">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>360</y>
+           <width>231</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Donner nouveau Localisation:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_39">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>430</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Donner nouveau Prix :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_nv_code_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>130</y>
+           <width>151</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_nv_type_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>280</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_nv_num_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>210</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_nv_localisation_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>360</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_nv_prix_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>430</y>
+           <width>113</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_modif_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>20</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="supprim">
+       <attribute name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/mmminus.png</normaloff>:/mmminus.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Supprimer</string>
+       </attribute>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>50</y>
+          <width>801</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="photos.qrc">:/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Supprimer_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>297</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+        <property name="icon">
+         <iconset resource="photos.qrc">
+          <normaloff>:/mmminus.png</normaloff>:/mmminus.png</iconset>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>341</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>80</y>
+           <width>161</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Donner Code_F :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_supprim_fournisseur">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>81</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="affich">
+       <attribute name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/affiicherr.png</normaloff>:/affiicherr.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Afficher</string>
+       </attribute>
+       <widget class="QLabel" name="label_42">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>260</y>
+          <width>581</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="photos.qrc">:/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QTableView" name="Affiche_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>-5</x>
+          <y>1</y>
+          <width>631</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Localisation_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>970</x>
+          <y>450</y>
+          <width>191</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Afficher Localisation</string>
+        </property>
+        <property name="icon">
+         <iconset resource="photos.qrc">
+          <normaloff>:/local.png</normaloff>:/local.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Localisation_combobox_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>340</y>
+          <width>221</width>
+          <height>41</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/chercher.png</normaloff>:/chercher.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Chercher</string>
+       </attribute>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Donner Code_F a chercher:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_chercher_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>20</y>
+          <width>113</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QTableView" name="chercher_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>230</y>
+          <width>651</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>100</y>
+          <width>471</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="photos.qrc">:/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Chercher_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>100</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Chercher</string>
+        </property>
+        <property name="icon">
+         <iconset resource="photos.qrc">
+          <normaloff>:/chercher.png</normaloff>:/chercher.png</iconset>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>100</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Donner Type_P a chercher:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_chercher_type_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>100</y>
+          <width>113</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_chercher_local_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>180</y>
+          <width>113</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Donner localisation a chercher:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/tri.png</normaloff>:/tri.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Tri</string>
+       </attribute>
+       <widget class="QLabel" name="label_47">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>301</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="photos.qrc">:/livraison-fournisseurs-achats-gestion-commerciale.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_tri_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>160</y>
+          <width>113</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>100</y>
+          <width>281</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Donner Type en rupture:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="Table_tri_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>120</y>
+          <width>811</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Tri">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>220</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Afficher Liste</string>
+        </property>
+        <property name="icon">
+         <iconset resource="photos.qrc">
+          <normaloff>:/tri.png</normaloff>:/tri.png</iconset>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>40</y>
+          <width>311</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Propositions d'achat :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>440</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>NotePad</string>
+        </property>
+        <property name="icon">
+         <iconset resource="photos.qrc">
+          <normaloff>:/modiiiif.png</normaloff>:/modiiiif.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="icon">
+        <iconset resource="photos.qrc">
+         <normaloff>:/settings.png</normaloff>:/settings.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Parametres de l'assistance vocale</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>440</y>
+          <width>392</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="speakButton_fournisseur">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Speak</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pauseButton_fournisseur">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Pause</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="resumeButton_fournisseur">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Resume</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="stopButton_fournisseur">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPlainTextEdit" name="plainTextEdit_fournisseur">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>20</y>
+          <width>725</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="plainText">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>341</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_55">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Voice name:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_52">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>MV Boli</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Volume:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_53">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Pitch:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_51">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>&amp;Language:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="buddy">
+            <cstring>language_fournisseur</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="QComboBox" name="voice_fournisseur">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QComboBox" name="engine_fournisseur">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QSlider" name="pitch_fournisseur">
+           <property name="minimum">
+            <number>-10</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QComboBox" name="language_fournisseur">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QSlider" name="volume_fournisseur">
+           <property name="maximum">
+            <number>100</number>
+           </property>
+           <property name="singleStep">
+            <number>5</number>
+           </property>
+           <property name="pageStep">
+            <number>20</number>
+           </property>
+           <property name="value">
+            <number>70</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_54">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Rate:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QSlider" name="rate_fournisseur">
+           <property name="minimum">
+            <number>-10</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_50">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Engine</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Page_Acceuil"/>
+    <widget class="QWidget" name="Page_Produit">
+     <widget class="QTabWidget" name="tab_tri">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1181</width>
+        <height>961</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_16">
+       <property name="maximumSize">
+        <size>
+         <width>1085</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Showcard Gothic</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <attribute name="title">
+        <string>Ajouter un produit</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_16">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>190</y>
+          <width>431</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>170</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>170</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>170</red>
+              <green>0</green>
+              <blue>0</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+          <stylestrategy>PreferDefault</stylestrategy>
+          <kerning>true</kerning>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::TabFocus</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="title">
+         <string>Produit</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <widget class="QLabel" name="label_86">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>190</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Showcard Gothic</family>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+           <stylestrategy>PreferDefault</stylestrategy>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string>Nom du produit</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_nombouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>190</y>
+           <width>161</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_87">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>270</y>
+           <width>56</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_88">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>450</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Prix </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_prixbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>440</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_ajouterbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>530</y>
+           <width>101</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Ajouter</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_89">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>360</y>
+           <width>71</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Quantité</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_quantitebouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>350</y>
+           <width>71</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_typebouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>270</y>
+           <width>231</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_90">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>110</y>
+           <width>111</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Code à bar</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_cabbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>110</y>
+           <width>171</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="maxLength">
+          <number>999999999</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_91">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>931</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+          <italic>false</italic>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>6.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>label_91</zorder>
+       <zorder>groupBox_16</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_17">
+       <attribute name="title">
+        <string>Modifier un produit</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_17">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>60</y>
+          <width>411</width>
+          <height>561</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="title">
+         <string>Produit</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <widget class="QLabel" name="label_92">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>160</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nouveau Nom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_93">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>300</y>
+           <width>71</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Quantité</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_94">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>370</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Prix</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_modifierbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>490</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_nommodifierbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>150</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_quantitemodifierbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>300</y>
+           <width>61</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_prixmodifierbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>370</y>
+           <width>61</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_95">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>230</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_typemodifierbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>230</y>
+           <width>231</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_96">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>100</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string> Code à bar</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBoxbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>100</y>
+           <width>131</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_97">
+        <property name="geometry">
+         <rect>
+          <x>-5</x>
+          <y>-5</y>
+          <width>1091</width>
+          <height>931</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../6.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>label_97</zorder>
+       <zorder>groupBox_17</zorder>
+      </widget>
+      <widget class="QWidget" name="ConsulterProduit_4">
+       <attribute name="title">
+        <string>Consulter Produit</string>
+       </attribute>
+       <widget class="QTableView" name="tab_afficherbouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>200</y>
+          <width>1051</width>
+          <height>271</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_18">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>680</y>
+          <width>471</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Rechercher un produit</string>
+        </property>
+        <widget class="QLabel" name="label_98">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Code à bar</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_cabrechercherbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>132</x>
+           <y>50</y>
+           <width>141</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_rechercherbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>50</y>
+           <width>151</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string> recherche par CAB</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_99">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_100">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_nomrechercherbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>110</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_typerechercherbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>170</y>
+           <width>151</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_recherchernombouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>110</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>REcherche Nom</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_recherchertypebouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>170</y>
+           <width>141</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>REcherche type</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QTableView" name="tab_rechercherbouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>690</y>
+          <width>461</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_101">
+        <property name="geometry">
+         <rect>
+          <x>-25</x>
+          <y>-35</y>
+          <width>1131</width>
+          <height>1001</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../6.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_imprimerbouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>87</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Imprimer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PDFbouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>87</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_Qrcodebouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>80</y>
+          <width>151</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>QrCode</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_code_4">
+        <property name="geometry">
+         <rect>
+          <x>880</x>
+          <y>50</y>
+          <width>101</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_4">
+        <property name="geometry">
+         <rect>
+          <x>870</x>
+          <y>40</y>
+          <width>121</width>
+          <height>101</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_102">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>530</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CAPTEUR</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="RB_ON_4">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>530</y>
+          <width>97</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ON</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="RB_OFF_4">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>530</y>
+          <width>97</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>OFF</string>
+        </property>
+       </widget>
+       <zorder>label_101</zorder>
+       <zorder>tab_afficherbouzid_4</zorder>
+       <zorder>groupBox_18</zorder>
+       <zorder>tab_rechercherbouzid_4</zorder>
+       <zorder>pb_imprimerbouzid_4</zorder>
+       <zorder>PDFbouzid_4</zorder>
+       <zorder>pb_Qrcodebouzid_4</zorder>
+       <zorder>tableView_4</zorder>
+       <zorder>label_102</zorder>
+       <zorder>RB_ON_4</zorder>
+       <zorder>RB_OFF_4</zorder>
+       <zorder>label_code_4</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_18">
+       <attribute name="title">
+        <string>Supprimer Produit</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_19">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>150</y>
+          <width>493</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="title">
+         <string>Produit</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <widget class="QPushButton" name="pb_supprimerbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>280</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_103">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>120</y>
+           <width>111</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Code à bar </string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comobox_supprimerbouzid_4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>131</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_104">
+        <property name="geometry">
+         <rect>
+          <x>-25</x>
+          <y>-35</y>
+          <width>1121</width>
+          <height>991</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../6.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>label_104</zorder>
+       <zorder>groupBox_19</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_19">
+       <attribute name="title">
+        <string>Tri </string>
+       </attribute>
+       <widget class="QTableView" name="tab_triebouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>11</y>
+          <width>581</width>
+          <height>661</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_trinombouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>200</y>
+          <width>201</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tri par nom</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_quantitebouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>320</y>
+          <width>191</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tri par quantite</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_prixbouzid_4">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>450</y>
+          <width>181</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Showcard Gothic</family>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tri par prix</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="background_4">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>931</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../5.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>background_4</zorder>
+       <zorder>tab_triebouzid_4</zorder>
+       <zorder>pb_trinombouzid_4</zorder>
+       <zorder>pb_quantitebouzid_4</zorder>
+       <zorder>pb_prixbouzid_4</zorder>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Page_Services">
+     <widget class="QWidget" name="layoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>-4</y>
+        <width>1171</width>
+        <height>591</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="1">
+        <widget class="QTabWidget" name="tabWidget_4">
+         <property name="font">
+          <font>
+           <family>Leelawadee</family>
+           <italic>false</italic>
+          </font>
+         </property>
+         <property name="tabPosition">
+          <enum>QTabWidget::North</enum>
+         </property>
+         <property name="tabShape">
+          <enum>QTabWidget::Triangular</enum>
+         </property>
+         <property name="currentIndex">
+          <number>4</number>
+         </property>
+         <property name="elideMode">
+          <enum>Qt::ElideNone</enum>
+         </property>
+         <property name="tabsClosable">
+          <bool>true</bool>
+         </property>
+         <property name="movable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="ajout_4">
+          <attribute name="icon">
+           <iconset>
+            <normaloff>../../../../../Downloads/plus.png</normaloff>../../../../../Downloads/plus.png</iconset>
+          </attribute>
+          <attribute name="title">
+           <string>Ajouter</string>
+          </attribute>
+          <attribute name="toolTip">
+           <string>Ajout d&quot;un fournisseur</string>
+          </attribute>
+          <widget class="QPushButton" name="chehata_pb_ajouter_3">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>410</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>MV Boli</family>
+             <italic>false</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>Valider</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_22">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>-30</y>
+             <width>1061</width>
+             <height>611</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <widget class="QLabel" name="label_129">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>80</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;code de service&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="Acode_s_3">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>80</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_130">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>180</y>
+              <width>101</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;description: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="Adescription_s_3">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>180</y>
+              <width>161</width>
+              <height>61</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_131">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>280</y>
+              <width>181</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;type: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="Atype_s_3">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>280</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_132">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>350</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; color:#000000;&quot;&gt;prix: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="Aprix_3">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>350</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <zorder>groupBox_22</zorder>
+          <zorder>chehata_pb_ajouter_3</zorder>
+         </widget>
+         <widget class="QWidget" name="modif_4">
+          <attribute name="icon">
+           <iconset>
+            <normaloff>../../../../../Downloads/modiif.jpg</normaloff>../../../../../Downloads/modiif.jpg</iconset>
+          </attribute>
+          <attribute name="title">
+           <string>Modifier</string>
+          </attribute>
+          <attribute name="toolTip">
+           <string>Modifier fournisseur</string>
+          </attribute>
+          <widget class="QGroupBox" name="groupBox_23">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>721</width>
+             <height>301</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <widget class="QLabel" name="label_133">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>70</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;code de service :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_134">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>231</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;modifier le  prix :&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_nv_prix_3">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>210</y>
+              <width>91</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_135">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>119</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>description</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::PlainText</enum>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="ndescriptions_3">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>130</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="type_nv_3">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>170</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_136">
+            <property name="geometry">
+             <rect>
+              <x>15</x>
+              <y>165</y>
+              <width>81</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>new type</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="comboBox_code_m_3">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>80</y>
+              <width>81</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="chehata_Valide_Modif_3">
+            <property name="geometry">
+             <rect>
+              <x>72</x>
+              <y>250</y>
+              <width>141</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>Valider modifier</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_137">
+           <property name="geometry">
+            <rect>
+             <x>-710</x>
+             <y>-10</y>
+             <width>1661</width>
+             <height>601</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../../../../b1.jpg</pixmap>
+           </property>
+          </widget>
+          <zorder>label_137</zorder>
+          <zorder>groupBox_23</zorder>
+         </widget>
+         <widget class="QWidget" name="supprim_4">
+          <attribute name="icon">
+           <iconset>
+            <normaloff>../../../../../Downloads/miinus.png</normaloff>../../../../../Downloads/miinus.png</iconset>
+          </attribute>
+          <attribute name="title">
+           <string>Supprimer</string>
+          </attribute>
+          <widget class="QLabel" name="label_138">
+           <property name="geometry">
+            <rect>
+             <x>-690</x>
+             <y>0</y>
+             <width>2271</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../../../../projetcpp/b1.jpg</pixmap>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_24">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>0</y>
+             <width>341</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <widget class="QLabel" name="label_139">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>80</y>
+              <width>151</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>MV Boli</family>
+              <italic>false</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;code de service&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="Scode_s_3">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>80</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="pb_supprimer_3">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>200</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Supprimer</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_code_s_3">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>80</y>
+             <width>73</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_140">
+           <property name="geometry">
+            <rect>
+             <x>-950</x>
+             <y>-10</y>
+             <width>1911</width>
+             <height>596</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../../../../b1.jpg</pixmap>
+           </property>
+          </widget>
+          <zorder>label_140</zorder>
+          <zorder>label_138</zorder>
+          <zorder>groupBox_24</zorder>
+          <zorder>pb_supprimer_3</zorder>
+          <zorder>comboBox_code_s_3</zorder>
+         </widget>
+         <widget class="QWidget" name="affich_4">
+          <attribute name="icon">
+           <iconset>
+            <normaloff>../../../../../Downloads/afficher.png</normaloff>../../../../../Downloads/afficher.png</iconset>
+          </attribute>
+          <attribute name="title">
+           <string>Afficher</string>
+          </attribute>
+          <widget class="QLabel" name="label_141">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>-690</x>
+             <y>-40</y>
+             <width>1921</width>
+             <height>701</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../../../../projetcpp/b1.jpg</pixmap>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="geometry">
+            <rect>
+             <x>620</x>
+             <y>410</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>MV Boli</family>
+             <italic>false</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>Annuler</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_25">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>-60</x>
+             <y>0</y>
+             <width>1001</width>
+             <height>591</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <property name="flat">
+            <bool>true</bool>
+           </property>
+           <property name="checkable">
+            <bool>false</bool>
+           </property>
+           <widget class="QTableView" name="tab_service_3">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>30</y>
+              <width>521</width>
+              <height>371</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_142">
+            <property name="geometry">
+             <rect>
+              <x>-900</x>
+              <y>0</y>
+              <width>2121</width>
+              <height>711</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../../../../b1.jpg</pixmap>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pb_stat_3">
+            <property name="geometry">
+             <rect>
+              <x>690</x>
+              <y>170</y>
+              <width>93</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>stat</string>
+            </property>
+           </widget>
+           <zorder>label_142</zorder>
+           <zorder>tab_service_3</zorder>
+           <zorder>pb_stat_3</zorder>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="rechercher_3">
+          <attribute name="title">
+           <string>recherhcer</string>
+          </attribute>
+          <widget class="QTableView" name="table_search_3">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>170</y>
+             <width>631</width>
+             <height>121</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_143">
+           <property name="geometry">
+            <rect>
+             <x>125</x>
+             <y>95</y>
+             <width>91</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_26">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>40</y>
+             <width>641</width>
+             <height>501</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>rechercher</string>
+           </property>
+           <widget class="QComboBox" name="comboBox_code_search_3">
+            <property name="geometry">
+             <rect>
+              <x>190</x>
+              <y>50</y>
+              <width>73</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_code_3">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>330</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_type_3">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>360</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_description_3">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>390</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="txt_prix_3">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>420</y>
+              <width>113</width>
+              <height>22</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="search_pb_3">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>80</y>
+              <width>93</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>seach</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="promo_pb_3">
+            <property name="geometry">
+             <rect>
+              <x>400</x>
+              <y>410</y>
+              <width>93</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>promo</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="prom_box_3">
+            <property name="geometry">
+             <rect>
+              <x>410</x>
+              <y>330</y>
+              <width>73</width>
+              <height>22</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>20</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>50</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>75</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="label_144">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>330</y>
+              <width>56</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>code</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_145">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>370</y>
+              <width>56</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>type</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_146">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>400</y>
+              <width>71</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>discription</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_147">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>420</y>
+              <width>56</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>prix</string>
+            </property>
+           </widget>
+          </widget>
+          <zorder>label_143</zorder>
+          <zorder>groupBox_26</zorder>
+          <zorder>table_search_3</zorder>
+         </widget>
+         <widget class="QWidget" name="imri_3">
+          <attribute name="title">
+           <string>imprimer</string>
+          </attribute>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="geometry">
+            <rect>
+             <x>610</x>
+             <y>150</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>print 1</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_148">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>40</y>
+             <width>331</width>
+             <height>221</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_149">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>300</y>
+             <width>271</width>
+             <height>241</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_print2_3">
+           <property name="geometry">
+            <rect>
+             <x>610</x>
+             <y>390</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>print 2</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Page_Employes">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1051</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+       </font>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>Ajout_Employé</string>
+       </attribute>
+       <widget class="QLabel" name="background_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1051</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>471</width>
+          <height>551</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+         </font>
+        </property>
+        <property name="title">
+         <string>Donnée Employer</string>
+        </property>
+        <widget class="QLabel" name="label_68">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>50</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_nom_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>50</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="B_AjoutEmploye_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>480</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Confirmer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_69">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>90</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>prénom</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_prenom_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>90</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_id_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>130</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_70">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>130</y>
+           <width>21</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CIN</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_adresse_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>170</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_71">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>170</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Adresse</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_telephone_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>210</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_72">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>210</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Télephone</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_73">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>250</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Role</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_role_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>250</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_15">
+       <attribute name="title">
+        <string>Consulter_Employé</string>
+       </attribute>
+       <widget class="QLabel" name="background_7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1051</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>511</width>
+          <height>531</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="Recherche_2">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>50</y>
+          <width>131</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView_5">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>190</y>
+          <width>501</width>
+          <height>281</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonEmploye_2">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>90</y>
+          <width>121</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Recherche</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Tri_nomEmploye_2">
+        <property name="geometry">
+         <rect>
+          <x>890</x>
+          <y>90</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Tri</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="PDFEmploye_2">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>510</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PDF</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_tri_2">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>50</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Prenom</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Role</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_20">
+       <attribute name="title">
+        <string>Modifier_Employé</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>471</width>
+          <height>551</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+         </font>
+        </property>
+        <property name="title">
+         <string>Modifier</string>
+        </property>
+        <widget class="QLabel" name="label_74">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>50</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CIN</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="B_ModifierEmploye_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>480</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Mod_Nom_2">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>140</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Mod_Prenom_2">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>140</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Mod_Role_2">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>190</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Mod_Telephone_2">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>190</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="Mod_Adresse_2">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>240</y>
+           <width>113</width>
+           <height>22</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_75">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>140</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_76">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>140</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Prénom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_77">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>190</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Télephone</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_78">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>190</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Role</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_79">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>240</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Adresse</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_5">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>50</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="background_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1051</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>background_8</zorder>
+       <zorder>groupBox_6</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_21">
+       <attribute name="title">
+        <string>Supprimer_Employé</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>471</width>
+          <height>551</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MV Boli</family>
+         </font>
+        </property>
+        <property name="title">
+         <string>Supprimer</string>
+        </property>
+        <widget class="QLabel" name="label_80">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>50</y>
+           <width>56</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CIN</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="B_deleteEmploye_2">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>480</y>
+           <width>93</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Supprimer</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_6">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>50</y>
+           <width>121</width>
+           <height>21</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="background_9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1051</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>background_9</zorder>
+       <zorder>groupBox_10</zorder>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Page_Client">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>2</y>
+        <width>1171</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLabel" name="backgroundajouter_2">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="backgroundmodif">
+         <property name="font">
+          <font>
+           <family>Script MT Bold</family>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab1">
+          <attribute name="title">
+           <string>Ajouter Client</string>
+          </attribute>
+          <widget class="QPushButton" name="pbretour">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>360</y>
+             <width>111</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Retour</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pbajoutermariem">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>360</y>
+             <width>121</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Ajouter</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lecode">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>40</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lenom">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>160</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="leprenom">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>120</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="ladresse">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>200</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lenum">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>80</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>160</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nom</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Code client</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>120</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Prénom</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>240</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Date Rendez-vous</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>141</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Numéro Téléphone</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Adresse Mail</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="ladate">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>240</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>280</y>
+             <width>131</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Service</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>280</y>
+             <width>251</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="backgroundajoutmar">
+           <property name="geometry">
+            <rect>
+             <x>5</x>
+             <y>-5</y>
+             <width>1161</width>
+             <height>661</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>backgroundclient.png</pixmap>
+           </property>
+          </widget>
+          <zorder>backgroundajoutmar</zorder>
+          <zorder>pbretour</zorder>
+          <zorder>pbajoutermariem</zorder>
+          <zorder>lecode</zorder>
+          <zorder>lenom</zorder>
+          <zorder>leprenom</zorder>
+          <zorder>ladresse</zorder>
+          <zorder>lenum</zorder>
+          <zorder>label_2</zorder>
+          <zorder>label_3</zorder>
+          <zorder>label_4</zorder>
+          <zorder>label_5</zorder>
+          <zorder>label_6</zorder>
+          <zorder>label_7</zorder>
+          <zorder>ladate</zorder>
+          <zorder>label_9</zorder>
+          <zorder>comboBox</zorder>
+         </widget>
+         <widget class="QWidget" name="tab_5">
+          <attribute name="title">
+           <string>Liste Clients</string>
+          </attribute>
+          <widget class="QLabel" name="backgroundaffich">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>backgroundclient.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QTableView" name="TABCLI">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>651</width>
+             <height>561</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">selection-color: rgb(255, 208, 225);
+background-color: rgb(223, 208, 238);
+alternate-background-color: rgb(255, 19, 173);
+selection-color: rgb(241, 213, 255);
+</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_7">
+          <attribute name="title">
+           <string>Modifier Client</string>
+          </attribute>
+          <widget class="QLineEdit" name="numtelmodif">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>90</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="nommodif">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>130</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="prenommodif">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>170</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="adressemodif">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>210</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="datemodif">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>250</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pbmodifiermariem">
+           <property name="geometry">
+            <rect>
+             <x>140</x>
+             <y>357</y>
+             <width>121</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Modifier</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>360</y>
+             <width>121</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>11</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Retour</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_2">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>290</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string> Code client</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>211</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nouveau Numéro Téléphone</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>130</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nouveau Prénom</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_20">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>191</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nouveau Nom</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>210</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nouvelle Adresse Mail</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>250</y>
+             <width>211</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nouvelle Date Rendez-vous</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>290</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nouveau Service</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="backgroundmodiff">
+           <property name="geometry">
+            <rect>
+             <x>5</x>
+             <y>-5</y>
+             <width>1171</width>
+             <height>661</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>backgroundclient.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_modif">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>50</y>
+             <width>171</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <zorder>backgroundmodiff</zorder>
+          <zorder>numtelmodif</zorder>
+          <zorder>nommodif</zorder>
+          <zorder>prenommodif</zorder>
+          <zorder>adressemodif</zorder>
+          <zorder>datemodif</zorder>
+          <zorder>pbmodifiermariem</zorder>
+          <zorder>pushButton_3</zorder>
+          <zorder>comboBox_2</zorder>
+          <zorder>label_10</zorder>
+          <zorder>label_18</zorder>
+          <zorder>label_19</zorder>
+          <zorder>label_20</zorder>
+          <zorder>label_11</zorder>
+          <zorder>label_12</zorder>
+          <zorder>label_13</zorder>
+          <zorder>comboBox_modif</zorder>
+         </widget>
+         <widget class="QWidget" name="tab_6">
+          <attribute name="title">
+           <string>Supprimer Client</string>
+          </attribute>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>190</y>
+             <width>191</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Donner Code_Client</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="backgroundsupprimer">
+           <property name="geometry">
+            <rect>
+             <x>5</x>
+             <y>-5</y>
+             <width>1161</width>
+             <height>681</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>backgroundclient.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_suppmariem">
+           <property name="geometry">
+            <rect>
+             <x>270</x>
+             <y>240</y>
+             <width>131</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>11</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Supprimer</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Supp">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>180</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <zorder>backgroundsupprimer</zorder>
+          <zorder>label_8</zorder>
+          <zorder>pb_suppmariem</zorder>
+          <zorder>comboBox_Supp</zorder>
+         </widget>
+         <widget class="QWidget" name="tab_11">
+          <attribute name="title">
+           <string>Rechercher Client</string>
+          </attribute>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Donner code client </string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="coderech">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>20</y>
+             <width>211</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pbrecherchermariem">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>60</y>
+             <width>121</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>11</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Rechercher</string>
+           </property>
+          </widget>
+          <widget class="QTableView" name="tabrech">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>190</y>
+             <width>681</width>
+             <height>391</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(217, 233, 255);</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="backgroundrech">
+           <property name="geometry">
+            <rect>
+             <x>5</x>
+             <y>-5</y>
+             <width>1161</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>backgroundclient.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>70</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Donner Date RDV </string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="daterech">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>70</y>
+             <width>211</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>130</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Donner Service</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_srech">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>130</y>
+             <width>211</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <zorder>label_16</zorder>
+          <zorder>backgroundrech</zorder>
+          <zorder>tabrech</zorder>
+          <zorder>coderech</zorder>
+          <zorder>pbrecherchermariem</zorder>
+          <zorder>label_14</zorder>
+          <zorder>daterech</zorder>
+          <zorder>label_15</zorder>
+          <zorder>comboBox_srech</zorder>
+         </widget>
+         <widget class="QWidget" name="tab_8">
+          <attribute name="title">
+           <string>Rendez-vous</string>
+          </attribute>
+          <widget class="QTableView" name="TVTRI">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>561</width>
+             <height>541</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Script MT Bold</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 206, 162);
+selection-color: rgb(255, 203, 129);</string>
+           </property>
+          </widget>
+          <widget class="QCalendarWidget" name="calendarWidgetmariem">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>30</y>
+             <width>541</width>
+             <height>221</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="backgroundrdv">
+           <property name="geometry">
+            <rect>
+             <x>5</x>
+             <y>-5</y>
+             <width>1161</width>
+             <height>661</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>backgroundclient.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QTableView" name="tvrdv">
+           <property name="geometry">
+            <rect>
+             <x>580</x>
+             <y>260</y>
+             <width>541</width>
+             <height>311</height>
+            </rect>
+           </property>
+          </widget>
+          <zorder>backgroundrdv</zorder>
+          <zorder>TVTRI</zorder>
+          <zorder>calendarWidgetmariem</zorder>
+          <zorder>tvrdv</zorder>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Mail</string>
+          </attribute>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>80</y>
+             <width>261</width>
+             <height>241</height>
+            </rect>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="title">
+            <string>Type de Mail</string>
+           </property>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>49</y>
+              <width>201</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Script MT Bold</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(248, 222, 255);</string>
+            </property>
+            <property name="text">
+             <string>Mail fidelité</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>130</y>
+              <width>211</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Script MT Bold</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(213, 223, 255);</string>
+            </property>
+            <property name="text">
+             <string>Mail offres de salon </string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>60</y>
+             <width>141</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Donner mail du client</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="codemail">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>70</y>
+             <width>231</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="bcksms">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>671</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>backgroundclient.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pb_mailmariem">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>350</y>
+             <width>161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Envoyer Mail</string>
+           </property>
+          </widget>
+          <widget class="QTableView" name="tvmail">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>131</y>
+             <width>391</width>
+             <height>351</height>
+            </rect>
+           </property>
+          </widget>
+          <zorder>bcksms</zorder>
+          <zorder>groupBox</zorder>
+          <zorder>label_17</zorder>
+          <zorder>codemail</zorder>
+          <zorder>pb_mailmariem</zorder>
+          <zorder>tvmail</zorder>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Brochure </string>
+          </attribute>
+          <widget class="QLabel" name="brochfront">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>541</width>
+             <height>481</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>bf.PNG</pixmap>
+           </property>
+          </widget>
+          <widget class="QLabel" name="brochback">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>110</y>
+             <width>581</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>bb.PNG</pixmap>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>370</y>
+             <width>171</width>
+             <height>141</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#ffddf9;&quot;&gt;Brochure &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; text-decoration: underline; color:#ffddf9;&quot;&gt;Prix /Promos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_22">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>130</y>
+             <width>171</width>
+             <height>431</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;----------Cheveux----------------&lt;/p&gt;&lt;p&gt;Coupe-----------------------50dt&lt;/p&gt;&lt;p&gt;Coiffure--------------------100dt&lt;/p&gt;&lt;p&gt;Brushing-------------------60dt&lt;/p&gt;&lt;p&gt;Coloration------------------300dt&lt;/p&gt;&lt;p&gt;&lt;br/&gt;---------Maquillage--------------&lt;/p&gt;&lt;p&gt;Maquillage de mariée----750dt&lt;/p&gt;&lt;p&gt;Maquillage ----------------250dt&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;----------Ongles----------------&lt;/p&gt;&lt;p&gt;Gel permanent--------------50dt&lt;/p&gt;&lt;p&gt;Capsules--------------------80dt&lt;/p&gt;&lt;p&gt;Design ongles---------------40dt&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_23">
+           <property name="geometry">
+            <rect>
+             <x>405</x>
+             <y>120</y>
+             <width>141</width>
+             <height>441</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;----------Soins----------------&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soin visage------------120dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soins mains---------- -50dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soins pieds-------------60dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Soins corps------------250dt&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; color:#ffffff;&quot;&gt;Masssage-------------450dt&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>770</x>
+             <y>180</y>
+             <width>191</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#6e2e76;&quot;&gt;-50% Sur tout combo &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#6e2e76;&quot;&gt;Cheveux + Mquillage&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#6e2e76;&quot;&gt;+ Ongles +Soins&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>570</x>
+             <y>240</y>
+             <width>181</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-style:italic; text-decoration: underline; color:#ab3271;&quot;&gt;-20% special revellion! &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;entamez la nouvelle &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;année avec un new look! &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>980</x>
+             <y>130</y>
+             <width>161</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#9e0e59;&quot;&gt;Kit mariée: &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#9e0e59;&quot;&gt;Seulement à 1000dt!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#9e0e59;&quot;&gt;coiffure+maquillage+ongles&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1141</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 207, 255);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic; text-decoration: underline; color:#ac2b70;&quot;&gt;Notre Brochure &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:italic; text-decoration: underline; color:#ac2b70;&quot;&gt;Novembre/Decembre 2021&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QDateEdit" name="currentdate">
+      <property name="geometry">
+       <rect>
+        <x>990</x>
+        <y>820</y>
+        <width>110</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Page_Comptabilite"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
