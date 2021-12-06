@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>645</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="photos.qrc">
+    <normaloff>:/243530218_1310825109377240_1931357582866907769_n.ico</normaloff>:/243530218_1310825109377240_1931357582866907769_n.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+border-radius: 15px;
+}</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>471</width>
+     <height>590</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(36,34,44);
+	color: #000000;</string>
+   </property>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>180</y>
+      <width>211</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+border: 2px solid rgb(37,39,48);
+border-radius: 20px;
+color:#FFF;
+padding-right: 20px;
+padding-left: 20px;
+background-color: rgb(69, 65, 85);
+}
+QLineEdit:hover{
+border: 2px solid rgb(38,50,62);
+}
+QLineEdit:focus{
+border: 2px solid rgb(35,170,250);
+background-color: rgb(103, 97, 126);
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>CIN</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>151</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Vijaya</family>
+      <pointsize>36</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label{
+	color: rgb(255, 255, 255);
+	font: 36pt &quot;Vijaya&quot;;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>-20</y>
+      <width>111</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: solid rgb(0,0,0) 30px</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="photos.qrc">
+      <normaloff>:/243530218_1310825109377240_1931357582866907769_n.ico</normaloff>:/243530218_1310825109377240_1931357582866907769_n.ico</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>128</width>
+      <height>128</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>450</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border:  solid rgb(37,39,48);
+color:#FFF;
+background-color: rgb(69, 65, 85);
+	font: 19pt &quot;Vijaya&quot;;
+
+}
+QPushButton:hover{
+font: Bold;
+	background-color: rgb(206, 19, 2);
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>510</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border:  solid rgb(37,39,48);
+color:#FFF;
+background-color: rgb(69, 65, 85);
+	font: 19pt &quot;Vijaya&quot;;
+
+}
+QPushButton:hover{
+font: Bold;
+	background-color: rgb(206, 19, 2);
+}
+QPushButton:focus{
+	background-color: rgb(255, 0, 0);
+font: Bold;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>WATCH VIDEO</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
